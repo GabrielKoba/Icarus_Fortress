@@ -11,14 +11,23 @@ public class PlayerMovement : MonoBehaviour
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
     private bool m_canPickupCannonBall = false;
+    private bool m_canDropOffCannonBall = false;
 
     private const string BALL_PILE_COLLIDER_TAG = "BallPile";
+    private const string CANNON_COLLIDER_TAG = "Cannon";
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(BALL_PILE_COLLIDER_TAG))
         {
             m_canPickupCannonBall = true;
+            return;
+        }
+
+        if (other.CompareTag(CANNON_COLLIDER_TAG))
+        {
+            m_canDropOffCannonBall = true;
+            return;
         }
     }
 
@@ -27,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag(BALL_PILE_COLLIDER_TAG))
         {
             m_canPickupCannonBall = false;
+        }
+
+        if (other.CompareTag(BALL_PILE_COLLIDER_TAG))
+        {
+            m_canDropOffCannonBall = false;
         }
     }
 
@@ -48,6 +62,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && m_canPickupCannonBall)
         {
             m_heldCannonBall.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && m_canDropOffCannonBall)
+        {
+            m_heldCannonBall.SetActive(false);
         }
     }
 
