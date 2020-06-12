@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,13 +8,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D m_rigidBody;
     [SerializeField] private GameObject m_heldCannonBall;
 
+    [SerializeField] private GameEventStringParam m_cannonLoaded;
+    [SerializeField] private GameEventStringParam m_cannonFired;
+
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
     private bool m_canPickupCannonBall = false;
-    private bool m_canDropOffCannonBall = false;
+
+    private string m_cannonRangeIdentifier;
 
     private const string BALL_PILE_COLLIDER_TAG = "BallPile";
-    private const string CANNON_COLLIDER_TAG = "Cannon";
+
+    private readonly HashSet<string> m_cannonTags = new HashSet<string>()
+    {
+        "CannonTop",
+        "CannonMiddle",
+        "CannonBottom"
+    };
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,10 +34,9 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (other.CompareTag(CANNON_COLLIDER_TAG))
+        if (m_cannonTags.Contains(other.tag))
         {
-            m_canDropOffCannonBall = true;
-            return;
+            m_cannonRangeIdentifier = other.tag;
         }
     }
 
@@ -38,9 +47,9 @@ public class PlayerMovement : MonoBehaviour
             m_canPickupCannonBall = false;
         }
 
-        if (other.CompareTag(BALL_PILE_COLLIDER_TAG))
+        if (m_cannonTags.Contains(other.tag))
         {
-            m_canDropOffCannonBall = false;
+            m_cannonRangeIdentifier = string.Empty;
         }
     }
 
@@ -62,11 +71,19 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && m_canPickupCannonBall)
         {
             m_heldCannonBall.SetActive(true);
+            return;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && m_canDropOffCannonBall)
+        if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier) && m_heldCannonBall.activeSelf)
         {
+            m_cannonLoaded.Raise(m_cannonRangeIdentifier);
             m_heldCannonBall.SetActive(false);
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier))
+        {
+            m_cannonFired.Raise(m_cannonRangeIdentifier);
         }
     }
 

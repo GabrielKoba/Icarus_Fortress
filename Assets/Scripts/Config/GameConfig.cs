@@ -8,4 +8,6 @@ public class GameConfig : ScriptableObject
     public float PlayerMoveSpeed = 100f;
     public float PlayerJumpForce = 600f;
     public float PlayerGravity = 3f;
+    public float CannonBallSpeed = 5f;
+    public float CannonBallDestroyDelay = 5f;
 }

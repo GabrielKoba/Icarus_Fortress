@@ -271,6 +271,8 @@ MonoBehaviour:
   m_controller: {fileID: 482498323666416887}
   m_rigidBody: {fileID: 2227265097871785096}
   m_heldCannonBall: {fileID: 3764330315111483778}
+  m_cannonLoaded: {fileID: 11400000, guid: dfba49f4f6d844e43837d25fc56de446, type: 2}
+  m_cannonFired: {fileID: 11400000, guid: 850e7ec73d71f2041ac64615f18ebec0, type: 2}
 --- !u!114 &482498323666416887
 MonoBehaviour:
   m_ObjectHideFlags: 0
