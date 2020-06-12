@@ -15,7 +15,7 @@ public class PlatformBehaviour : MonoBehaviour
         {
             m_isDropping = true;
             m_effector.rotationalOffset = 180f;
-            StartCoroutine(RotateBackEffectorAfterDelay(0.2f));
+            StartCoroutine(RotateBackEffectorAfterDelay(0.15f));
         }
 
         if (Input.GetKeyUp(KeyCode.S) && Mathf.Approximately(m_effector.rotationalOffset, 0f))
