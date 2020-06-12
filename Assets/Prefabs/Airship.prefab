@@ -280,7 +280,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 1.6688187, y: 0.15938133}
+  m_Offset: {x: 1.7396259, y: 0.14645071}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -291,7 +291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.337638, y: 0.37343132}
+  m_Size: {x: 4.4792533, y: 0.13818231}
   m_EdgeRadius: 0
 --- !u!251 &6295447264522586639
 PlatformEffector2D:
@@ -428,7 +428,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0090513, y: 0.15938133}
+  m_Offset: {x: 1.0090513, y: 0.138617}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -439,7 +439,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7065048, y: 0.37343132}
+  m_Size: {x: 2.7065048, y: 0.1384708}
   m_EdgeRadius: 0
 --- !u!251 &4265795315801651378
 PlatformEffector2D:
@@ -608,7 +608,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0217433, y: 0.15938133}
+  m_Offset: {x: 1.0217433, y: 0.17441338}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -619,7 +619,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7605896, y: 0.37343132}
+  m_Size: {x: 2.7605896, y: 0.16073954}
   m_EdgeRadius: 0
 --- !u!251 &103110113
 PlatformEffector2D:
@@ -730,7 +730,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 1.66651, y: 0.15938133}
+  m_Offset: {x: 1.7135935, y: 0.14800397}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -741,7 +741,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.33302, y: 0.37343132}
+  m_Size: {x: 4.427188, y: 0.15950215}
   m_EdgeRadius: 0
 --- !u!251 &1311129127025856098
 PlatformEffector2D:
