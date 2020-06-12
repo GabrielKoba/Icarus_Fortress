@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 8469769195202097532}
   - component: {fileID: 659450486567910787}
   m_Layer: 8
-  m_Name: FloorCollider (3)
+  m_Name: RoofCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,8 +244,9 @@ GameObject:
   - component: {fileID: 8737896406254272114}
   - component: {fileID: 554388407434721594}
   - component: {fileID: 6295447264522586639}
+  - component: {fileID: 4400792104231375057}
   m_Layer: 8
-  m_Name: FloorCollider (4)
+  m_Name: Platform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,6 +311,19 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &4400792104231375057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174503522524965638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16477ac0b6b84dd4ea8315953dc9cf0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_effector: {fileID: 6295447264522586639}
 --- !u!1 &3950441357656067891
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,8 +392,9 @@ GameObject:
   - component: {fileID: 8783475056346072404}
   - component: {fileID: 158250695553530450}
   - component: {fileID: 4265795315801651378}
+  - component: {fileID: 4345934457094470616}
   m_Layer: 8
-  m_Name: FloorCollider (2)
+  m_Name: Platform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,6 +459,19 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &4345934457094470616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132898658226137661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16477ac0b6b84dd4ea8315953dc9cf0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_effector: {fileID: 4265795315801651378}
 --- !u!1 &4689281084487891773
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,8 +572,9 @@ GameObject:
   - component: {fileID: 8926978339245959143}
   - component: {fileID: 1118796444689099428}
   - component: {fileID: 103110113}
+  - component: {fileID: 4354314669676533817}
   m_Layer: 8
-  m_Name: FloorCollider (1)
+  m_Name: Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,6 +639,19 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &4354314669676533817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5924536036303476089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16477ac0b6b84dd4ea8315953dc9cf0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_effector: {fileID: 103110113}
 --- !u!1 &6373662124181224885
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +694,9 @@ GameObject:
   - component: {fileID: 3502663492156976803}
   - component: {fileID: 6008284741921932309}
   - component: {fileID: 1311129127025856098}
+  - component: {fileID: 8458190356848722463}
   m_Layer: 8
-  m_Name: FloorCollider (5)
+  m_Name: Platform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,3 +761,16 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &8458190356848722463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696219394764956878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16477ac0b6b84dd4ea8315953dc9cf0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_effector: {fileID: 1311129127025856098}
