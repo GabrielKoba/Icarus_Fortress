@@ -590,38 +590,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &513441323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1739939215249503770, guid: f016a43d2fcb7f64faa369a44a9f0311,
-    type: 3}
-  m_PrefabInstance: {fileID: 958725071611014406}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &513441325
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513441323}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.940048, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.880096, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,16 +1170,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Airship
       objectReference: {fileID: 0}
-    - target: {fileID: 4045861714460162917, guid: f016a43d2fcb7f64faa369a44a9f0311,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 4045861714460162917, guid: f016a43d2fcb7f64faa369a44a9f0311,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.41
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f016a43d2fcb7f64faa369a44a9f0311, type: 3}
 --- !u!1001 &7928642809974543168
@@ -1229,12 +1187,27 @@ PrefabInstance:
     - target: {fileID: 482498323666416887, guid: 92b750086f4fea74d82716ed6964c4aa,
         type: 3}
       propertyPath: m_JumpForce
-      value: 400
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 482498323666416887, guid: 92b750086f4fea74d82716ed6964c4aa,
         type: 3}
       propertyPath: m_AirControl
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227265097871785096, guid: 92b750086f4fea74d82716ed6964c4aa,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227265097871785096, guid: 92b750086f4fea74d82716ed6964c4aa,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227265097871785096, guid: 92b750086f4fea74d82716ed6964c4aa,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5680556071661250390, guid: 92b750086f4fea74d82716ed6964c4aa,
         type: 3}
