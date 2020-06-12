@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c1d62018590254a8f1b7c2bbcb1af9, type: 3}
   m_Name: DefaultGameConfig
   m_EditorClassIdentifier: 
-  PlayerMoveSpeed: 100
-  PlayerJumpForce: 600
-  PlayerGravity: 3
+  PlayerMoveSpeed: 150
+  PlayerJumpForce: 800
+  PlayerGravity: 5
