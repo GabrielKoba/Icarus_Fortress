@@ -10,6 +10,9 @@ TagManager:
   - CannonMiddle
   - CannonBottom
   - Enemy
+  - SpawnPointTop
+  - SpawnPointMiddle
+  - SpawnPointBottom
   layers:
   - Default
   - TransparentFX

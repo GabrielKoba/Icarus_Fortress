@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c1d62018590254a8f1b7c2bbcb1af9, type: 3}
   m_Name: DefaultGameConfig
   m_EditorClassIdentifier: 
+  CannonBallSpeed: 10
+  CannonBallDestroyDelay: 5
   PlayerMoveSpeed: 150
   PlayerJumpForce: 800
   PlayerGravity: 5
-  CannonBallSpeed: 10
-  CannonBallDestroyDelay: 5
+  PlayerStartingLives: 3
   MinDelay: 3
   MaxDelay: 6
   SkyFlyMoveSpeed: 2
   CloudBeetleMoveSpeed: 1
+  CloudBeetleSwitchLanesFrequencyMin: 2
+  CloudBeetleSwitchLanesFrequencyMax: 4
+  CloudBeetleSwitchLanesSpeed: 4
   WindWaspMoveSpeed: 3

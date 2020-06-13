@@ -20,6 +20,9 @@ public class GameConfig : ScriptableObject
 
     [Header("Enemies")]
     public float SkyFlyMoveSpeed = 5f;
-    public float CloudBeetleMoveSpeed = 3f;
+    public float CloudBeetleMoveSpeed = 4f;
+    public float CloudBeetleSwitchLanesFrequencyMin = 0.5f;
+    public float CloudBeetleSwitchLanesFrequencyMax = 3f;
+    public float CloudBeetleSwitchLanesSpeed = 2f;
     public float WindWaspMoveSpeed = 8f;
 }

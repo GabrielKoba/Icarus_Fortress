@@ -20,6 +20,6 @@ public class SkyflyBehaviour : MonoBehaviour
 
     private void Update()
     {
-        this.transform.position -= new Vector3(m_config.CloudBeetleMoveSpeed * Time.deltaTime, 0f, 0f);
+        this.transform.position -= new Vector3(m_config.SkyFlyMoveSpeed * Time.deltaTime, 0f, 0f);
     }
 }

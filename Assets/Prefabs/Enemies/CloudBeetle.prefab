@@ -98,6 +98,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   m_enemyHitPlayer: {fileID: 11400000, guid: ee3e5b61636a22e469a7c46e6a450feb, type: 2}
+  m_spawnPoints:
+  - {fileID: 4372864020040709292, guid: 8e046f2effaadf34ab27f44582354e22, type: 3}
+  - {fileID: 143977242315155855, guid: 21ced60a57b467e49a981aae531d3558, type: 3}
+  - {fileID: 3761215510289279725, guid: 584724f4b7ffdf24c912885198427677, type: 3}
 --- !u!61 &9216974927472994520
 BoxCollider2D:
   m_ObjectHideFlags: 0
