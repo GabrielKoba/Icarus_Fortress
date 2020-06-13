@@ -100,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   m_enemyHitPlayer: {fileID: 11400000, guid: ee3e5b61636a22e469a7c46e6a450feb, type: 2}
-  audioSource: {fileID: 0}
   deathSFX: event:/Enemy_Death
 --- !u!61 &9216974927472994520
 BoxCollider2D:
@@ -115,7 +114,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -126,7 +125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
 --- !u!50 &4802437307526914882
 Rigidbody2D:

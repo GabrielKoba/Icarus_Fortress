@@ -10,6 +10,17 @@ public class CannonBehaviour : MonoBehaviour
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string fireSFX;
 
+    [Header("Animation Settings")]
+
+    [SerializeField] GameObject smokeEffectPrefab;
+    private Animator m_Animator;
+    private Animator m_smokeAnimator;
+
+    void Awake() {
+        m_Animator = gameObject.GetComponent<Animator>();
+        m_smokeAnimator = smokeEffectPrefab.GetComponent<Animator>();
+    }
+
     public void OnCannonLoaded(string cannonId)
     {
         if (cannonId != this.tag)
@@ -32,6 +43,10 @@ public class CannonBehaviour : MonoBehaviour
 
         //Sound
         FMODUnity.RuntimeManager.PlayOneShot(fireSFX, transform.position);
+
+        //Animation
+        m_Animator.SetTrigger("Fire");
+        m_smokeAnimator.SetTrigger("Fire");
 
         Debug.Log($"{this.tag} fired!");
     }

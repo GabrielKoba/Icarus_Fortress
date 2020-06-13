@@ -1,0 +1,1375 @@
+fileFormatVersion: 2
+guid: 2a0b4fc85f6514747878be7e801f87c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3343371635128012805
+    second: Cannon_Smoke.png_0
+  - first:
+      213: 2303386708501596429
+    second: Cannon_Smoke.png_1
+  - first:
+      213: -2062410722072873806
+    second: Cannon_Smoke.png_2
+  - first:
+      213: -1244390743292790124
+    second: Cannon_Smoke.png_3
+  - first:
+      213: 8717282564125534062
+    second: Cannon_Smoke.png_4
+  - first:
+      213: 654472385673260999
+    second: Cannon_Smoke.png_5
+  - first:
+      213: 6710954371860052447
+    second: Cannon_Smoke.png_6
+  - first:
+      213: 2371035535650594700
+    second: Cannon_Smoke.png_7
+  - first:
+      213: -907194205551251469
+    second: Cannon_Smoke.png_8
+  - first:
+      213: 3957955431129643223
+    second: Cannon_Smoke.png_9
+  - first:
+      213: 9097233702226497365
+    second: Cannon_Smoke.png_10
+  - first:
+      213: 7168553796420503937
+    second: Cannon_Smoke.png_11
+  - first:
+      213: 134225880802638155
+    second: Cannon_Smoke.png_12
+  - first:
+      213: -2504477582906540310
+    second: Cannon_Smoke.png_13
+  - first:
+      213: 2603392970875162307
+    second: Cannon_Smoke.png_14
+  - first:
+      213: 1222725686094909590
+    second: Cannon_Smoke.png_15
+  - first:
+      213: -1187201804821896973
+    second: Cannon_Smoke.png_16
+  - first:
+      213: 4462862140334335992
+    second: Cannon_Smoke.png_17
+  - first:
+      213: -890645152616267324
+    second: Cannon_Smoke.png_18
+  - first:
+      213: 2535278738229581682
+    second: Cannon_Smoke.png_19
+  - first:
+      213: 94097052355330984
+    second: Cannon_Smoke.png_20
+  - first:
+      213: -3310172582777699046
+    second: Cannon_Smoke.png_21
+  - first:
+      213: -5232038453736680346
+    second: Cannon_Smoke.png_22
+  - first:
+      213: 4454298890933215986
+    second: Cannon_Smoke.png_23
+  - first:
+      213: -532327738791583235
+    second: Cannon_Smoke.png_24
+  - first:
+      213: -9139913317308988495
+    second: Cannon_Smoke.png_25
+  - first:
+      213: -5526381166163192143
+    second: Cannon_Smoke.png_26
+  - first:
+      213: 2398129369763328390
+    second: Cannon_Smoke.png_27
+  - first:
+      213: 483528282390323563
+    second: Cannon_Smoke.png_28
+  - first:
+      213: -2862770611769158664
+    second: Cannon_Smoke.png_29
+  - first:
+      213: -2808621123843364701
+    second: Cannon_Smoke.png_30
+  - first:
+      213: 1265834804517104298
+    second: Cannon_Smoke.png_31
+  - first:
+      213: 5225297674151923453
+    second: Cannon_Smoke.png_32
+  - first:
+      213: -2963377226947406817
+    second: Cannon_Smoke.png_33
+  - first:
+      213: -3213086114642892214
+    second: Cannon_Smoke.png_34
+  - first:
+      213: 3284826567861553908
+    second: Cannon_Smoke.png_35
+  - first:
+      213: -2282696253128691553
+    second: Cannon_Smoke.png_36
+  - first:
+      213: -5877266724735632115
+    second: Cannon_Smoke.png_37
+  - first:
+      213: 4290352662261855650
+    second: Cannon_Smoke.png_38
+  - first:
+      213: -7567025800525846955
+    second: Cannon_Smoke.png_39
+  - first:
+      213: -8745115120891854538
+    second: Cannon_Smoke.png_40
+  - first:
+      213: 5747534417841803527
+    second: Cannon_Smoke.png_41
+  - first:
+      213: -6852825877434224527
+    second: Cannon_Smoke.png_42
+  - first:
+      213: 8214317849976547434
+    second: Cannon_Smoke.png_43
+  - first:
+      213: -2301941643815187561
+    second: Cannon_Smoke.png_44
+  - first:
+      213: 5711618721568323173
+    second: Cannon_Smoke.png_45
+  - first:
+      213: -7430874788022383754
+    second: Cannon_Smoke.png_46
+  - first:
+      213: 8790488906583624856
+    second: Cannon_Smoke.png_0
+  - first:
+      213: 4855696645629913585
+    second: Cannon_Smoke.png_1
+  - first:
+      213: -8564953245346329816
+    second: Cannon_Smoke.png_2
+  - first:
+      213: -7483361521033449829
+    second: Cannon_Smoke.png_3
+  - first:
+      213: -6589011488749699990
+    second: Cannon_Smoke.png_4
+  - first:
+      213: 8968272209920147500
+    second: Cannon_Smoke.png_5
+  - first:
+      213: 9174298495368150180
+    second: Cannon_Smoke.png_6
+  - first:
+      213: -2193176647485727750
+    second: Cannon_Smoke.png_7
+  - first:
+      213: 3634157887781226148
+    second: Cannon_Smoke.png_8
+  - first:
+      213: 772360863494069738
+    second: Cannon_Smoke.png_9
+  - first:
+      213: -7902480838042541237
+    second: Cannon_Smoke.png_10
+  - first:
+      213: 7741980080559617859
+    second: Cannon_Smoke.png_11
+  - first:
+      213: -9003511383180102394
+    second: Cannon_Smoke.png_12
+  - first:
+      213: 3212522196401671714
+    second: Cannon_Smoke.png_13
+  - first:
+      213: 3203566676289637857
+    second: Cannon_Smoke.png_14
+  - first:
+      213: 5520398500607146593
+    second: Cannon_Smoke.png_15
+  - first:
+      213: 5354624225617288353
+    second: Cannon_Smoke.png_16
+  - first:
+      213: 8393465288657379741
+    second: Cannon_Smoke.png_17
+  - first:
+      213: 3931832617445311942
+    second: Cannon_Smoke.png_18
+  - first:
+      213: -6226032159806985007
+    second: Cannon_Smoke.png_19
+  - first:
+      213: 554676458740887668
+    second: Cannon_Smoke.png_20
+  - first:
+      213: -5802532520064338036
+    second: Cannon_Smoke.png_21
+  - first:
+      213: -7011781792040721678
+    second: Cannon_Smoke.png_22
+  - first:
+      213: 7713082169686937494
+    second: Cannon_Smoke.png_23
+  - first:
+      213: 89872329766603726
+    second: Cannon_Smoke.png_24
+  - first:
+      213: -5318808034268353004
+    second: Cannon_Smoke.png_25
+  - first:
+      213: -6957036271714218298
+    second: Cannon_Smoke.png_26
+  - first:
+      213: -5260671855478668009
+    second: Cannon_Smoke.png_27
+  - first:
+      213: 2883796120628390431
+    second: Cannon_Smoke.png_28
+  - first:
+      213: 1243115254953328708
+    second: Cannon_Smoke.png_29
+  - first:
+      213: 7367645980352747655
+    second: Cannon_Smoke.png_30
+  - first:
+      213: -6952474701489860467
+    second: Cannon_Smoke.png_31
+  - first:
+      213: 8049283353017048969
+    second: Cannon_Smoke.png_32
+  - first:
+      213: -8529388455350348658
+    second: Cannon_Smoke.png_33
+  - first:
+      213: 4104962436794686627
+    second: Cannon_Smoke.png_34
+  - first:
+      213: 2393640468964978251
+    second: Cannon_Smoke.png_35
+  - first:
+      213: -6721914385839496067
+    second: Cannon_Smoke.png_36
+  - first:
+      213: -8681479081912800891
+    second: Cannon_Smoke.png_37
+  - first:
+      213: 7139783759968680856
+    second: Cannon_Smoke.png_38
+  - first:
+      213: 5215166155407399824
+    second: Cannon_Smoke.png_39
+  - first:
+      213: 4783024620780630851
+    second: Cannon_Smoke.png_40
+  - first:
+      213: 6646711147621617649
+    second: Cannon_Smoke.png_41
+  - first:
+      213: -2198732093810233266
+    second: Cannon_Smoke.png_42
+  - first:
+      213: -3005671080184345649
+    second: Cannon_Smoke.png_43
+  - first:
+      213: -7579297166978929908
+    second: Cannon_Smoke.png_44
+  - first:
+      213: 2965934842285117758
+    second: Cannon_Smoke.png_45
+  - first:
+      213: 8049607861312634554
+    second: Cannon_Smoke.png_47
+  - first:
+      213: -5189046175377392307
+    second: Cannon_Smoke.png_48
+  - first:
+      213: 4711128744725716144
+    second: Cannon_Smoke.png_49
+  - first:
+      213: -2028548951628049819
+    second: Cannon_Smoke.png_50
+  - first:
+      213: 5654621314373645644
+    second: Cannon_Smoke.png_51
+  - first:
+      213: -7343544996678925380
+    second: Cannon_Smoke.png_52
+  - first:
+      213: -3048392087548531866
+    second: Cannon_Smoke.png_53
+  - first:
+      213: -671405635965179070
+    second: Cannon_Smoke.png_54
+  - first:
+      213: 8707290424718497769
+    second: Cannon_Smoke.png_55
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ccde626171ef970800000000000000
+      internalID: 8790488906583624856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 147
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9a3d36f56e26340800000000000000
+      internalID: 4855696645629913585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 147
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b8d45076c232980800000000000000
+      internalID: -8564953245346329816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 147
+        width: 31
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e69fc5852c52890800000000000000
+      internalID: -7483361521033449829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 147
+        width: 31
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c3b1806f02f84a0800000000000000
+      internalID: -6589011488749699990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 147
+        width: 30
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c204c491f04b57c70800000000000000
+      internalID: 8968272209920147500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 147
+        width: 30
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb1dfbfd7a15f70800000000000000
+      internalID: 9174298495368150180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 123
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb5ee485754091e0800000000000000
+      internalID: -2193176647485727750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 123
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a642e6285f1f6230800000000000000
+      internalID: 3634157887781226148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 123
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed5afafc1af7ba00800000000000000
+      internalID: 772360863494069738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 123
+        width: 31
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43a4240c8fb45290800000000000000
+      internalID: -7902480838042541237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 123
+        width: 31
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347f7ef4dd9017b60800000000000000
+      internalID: 7741980080559617859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 123
+        width: 30
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6053d52891a1d0380800000000000000
+      internalID: -9003511383180102394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_13
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 123
+        width: 30
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e449dbaeb259c20800000000000000
+      internalID: 3212522196401671714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edc58a3bea557c20800000000000000
+      internalID: 3203566676289637857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ab94f10356c9c40800000000000000
+      internalID: 5520398500607146593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac9e99fc527f4a40800000000000000
+      internalID: 5354624225617288353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91aef4a5349b7470800000000000000
+      internalID: 8393465288657379741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c54f1f0feca09630800000000000000
+      internalID: 3931832617445311942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dceb82dcb0b899a0800000000000000
+      internalID: -6226032159806985007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 99
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470b588ec4b92b700800000000000000
+      internalID: 554676458740887668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87b9e78a63497fa0800000000000000
+      internalID: -5802532520064338036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f26cd23c9521be90800000000000000
+      internalID: -7011781792040721678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fc69f1e5f5a0b60800000000000000
+      internalID: 7713082169686937494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb00e2686a4f3100800000000000000
+      internalID: 89872329766603726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ee0f8e54ccf26b0800000000000000
+      internalID: -5318808034268353004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce47feee54a37f90800000000000000
+      internalID: -6957036271714218298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 75
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7158c46d1d65ef6b0800000000000000
+      internalID: -5260671855478668009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a64beea4d450820800000000000000
+      internalID: 2883796120628390431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440cc52fcbe604110800000000000000
+      internalID: 1243115254953328708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78892c1dbf22f3660800000000000000
+      internalID: 7367645980352747655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d809ec34819d38f90800000000000000
+      internalID: -6952474701489860467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fdb09009cc4bf60800000000000000
+      internalID: 8049283353017048969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e845687f36681a980800000000000000
+      internalID: -8529388455350348658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 51
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac18755691c7f830800000000000000
+      internalID: 4104962436794686627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e28a0135be73120800000000000000
+      internalID: 2393640468964978251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74e275fa76f6b2a0800000000000000
+      internalID: -6721914385839496067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5896a9d75c0358780800000000000000
+      internalID: -8681479081912800891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b3902608b951360800000000000000
+      internalID: 7139783759968680856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b92b9bcfdff5840800000000000000
+      internalID: 5215166155407399824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343b3911d87b06240800000000000000
+      internalID: 4783024620780630851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 27
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff8d9ea29cdd3c50800000000000000
+      internalID: 6646711147621617649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40b0306fc88c71e0800000000000000
+      internalID: -2198732093810233266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb82f9c316b946d0800000000000000
+      internalID: -3005671080184345649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ba81b226de0d690800000000000000
+      internalID: -7579297166978929908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon_Smoke.png_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3
+        width: 32
+        height: 24
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31db5d560e192920800000000000000
+      internalID: 2965934842285117758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
