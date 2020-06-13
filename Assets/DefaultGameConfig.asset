@@ -15,3 +15,5 @@ MonoBehaviour:
   PlayerMoveSpeed: 150
   PlayerJumpForce: 800
   PlayerGravity: 5
+  CannonBallSpeed: 10
+  CannonBallDestroyDelay: 5
