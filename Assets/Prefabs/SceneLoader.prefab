@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 0}
   fadeSpeed: 0.8
+  fadeOutOnStart: 1
 --- !u!114 &5059453309949601840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,3 +60,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sceneToLoad: SampleScene
+  m_fader: {fileID: 5059453309949601842}

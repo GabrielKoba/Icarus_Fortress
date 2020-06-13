@@ -8,6 +8,7 @@ public class SceneFader : MonoBehaviour {
     #region FIELDS
     public Image fadeOutUIImage;
     public float fadeSpeed = 0.8f;
+    public bool fadeOutOnStart = true;
 
     public enum FadeDirection
     {
@@ -19,7 +20,10 @@ public class SceneFader : MonoBehaviour {
     #region MONOBHEAVIOR
     void OnEnable()
     {
-        StartCoroutine(Fade(FadeDirection.Out));
+        if (fadeOutOnStart)
+        {
+            StartCoroutine(Fade(FadeDirection.Out));
+        }
     }
     #endregion
 
@@ -51,6 +55,11 @@ public class SceneFader : MonoBehaviour {
     {
         yield return Fade(fadeDirection);
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    public void FadeImage(int direction)
+    {
+        StartCoroutine(Fade((FadeDirection)direction));
     }
 
     private void SetColorImage(ref float alpha, FadeDirection fadeDirection)

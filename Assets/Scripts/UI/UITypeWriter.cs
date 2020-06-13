@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UITypeWriter : MonoBehaviour
 {
+    [SerializeField] private float m_canSkipDelay = 0.5f;
     [SerializeField] private Text m_text;
     [SerializeField] private float m_delayBeforeStart;
     [SerializeField] private float m_delay = 0.125f;
@@ -12,6 +13,7 @@ public class UITypeWriter : MonoBehaviour
     [SerializeField] private UnityEvent m_onTextComplete;
 
     private string m_story;
+    private float m_accumulatedTime;
 
     private void Awake ()
     {
@@ -40,7 +42,9 @@ public class UITypeWriter : MonoBehaviour
 
     public void Update()
     {
-        if (m_allowSkip && Input.GetMouseButtonDown(0))
+        m_accumulatedTime += Time.deltaTime;
+
+        if (m_allowSkip && m_accumulatedTime > m_canSkipDelay && Input.GetMouseButtonDown(0))
         {
             m_delay = 0f;
         }
