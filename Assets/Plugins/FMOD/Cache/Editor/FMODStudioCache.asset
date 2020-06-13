@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Cannon_Fire
   guid: 62f08f07a7cc0c49975b1f7b164ce423
   Banks:
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -160,7 +160,7 @@ MonoBehaviour:
   Path: event:/Player_Jump
   guid: 369136bb6be3f949a65976a6714c9fee
   Banks:
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Plugins/FMOD/builds/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637276463125944416
+  lastModified: 637276665409661304
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1233302384786220827}
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   EditorEvents:
   - {fileID: -8781840377278684842}
   - {fileID: 3302232767468916011}
@@ -290,10 +290,10 @@ MonoBehaviour:
   - {fileID: -4331813946869838376}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   StringsBanks:
   - {fileID: -1233302384786220827}
-  stringsBankWriteTime: 637276463125944416
+  stringsBankWriteTime: 637276665409661304
   cacheVersion: 3
 --- !u!114 &770591477172164805
 MonoBehaviour:
@@ -313,6 +313,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &1403615543668270625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Plugins/FMOD/builds/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637276665409641277
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &1769785456418568997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +346,7 @@ MonoBehaviour:
   Path: event:/Level_Ambiance
   guid: 485a2ad3e46a6f45a8d600dbcbf3c0d1
   Banks:
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -393,7 +411,7 @@ MonoBehaviour:
   Path: event:/Enemy_Death
   guid: 47815a705557134ca8d8a8021622c0b5
   Banks:
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -416,7 +434,7 @@ MonoBehaviour:
   Path: event:/Enemy_Cry_Short
   guid: bed63f9022d7b54bbe837cc1b7f46140
   Banks:
-  - {fileID: 8980945182918656217}
+  - {fileID: 1403615543668270625}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -481,4 +499,4 @@ MonoBehaviour:
   lastModified: 637276463125914295
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
