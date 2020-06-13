@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private GameEventStringParam m_cannonLoaded;
     [SerializeField] private GameEventStringParam m_cannonFired;
+    [SerializeField] private SpriteRenderer[] m_capacityIndicators;
+    [SerializeField] private Sprite m_capacityFull;
+    [SerializeField] private Sprite m_capacityEmpty;
 
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string jumpSFX;
@@ -22,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     private string m_cannonRangeIdentifier;
 
+    private int m_numHeldCannonBalls = 0;
+    private const int PLAYER_MAX_CANNONBALLS = 3;
     private const string BALL_PILE_COLLIDER_TAG = "BallPile";
 
     private readonly HashSet<string> m_cannonTags = new HashSet<string>()
@@ -81,23 +86,39 @@ public class PlayerMovement : MonoBehaviour
             //Sound
             FMODUnity.RuntimeManager.PlayOneShot(ballPickupSFX, transform.position);
 
+            if (m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
+            {
+                m_capacityIndicators[m_numHeldCannonBalls].sprite = m_capacityFull;
+                m_numHeldCannonBalls++;
+            }
             m_heldCannonBall.SetActive(true);
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier) && m_heldCannonBall.activeSelf)
+
+        // Loading
+        if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier) && m_heldCannonBall.activeSelf && !GameObject.FindGameObjectWithTag(m_cannonRangeIdentifier).GetComponent<CannonBehaviour>().IsFullyLoaded)
         {
             //Sound
             FMODUnity.RuntimeManager.PlayOneShot(ballLoadingSFX, transform.position);
 
-            Debug.Log($"Raising event loaded for id {m_cannonRangeIdentifier}");
+            Debug.Log($"Loading! Num held balls {m_numHeldCannonBalls}");
             m_cannonLoaded.Raise(m_cannonRangeIdentifier);
-            m_heldCannonBall.SetActive(false);
+
+            m_numHeldCannonBalls--;
+            m_capacityIndicators[m_numHeldCannonBalls].sprite = m_capacityEmpty;
+            if (m_numHeldCannonBalls == 0)
+            {
+                m_heldCannonBall.SetActive(false);
+            }
+
             return;
         }
 
+        // Firing
         if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier))
         {
+            Debug.Log($"Firing! Num held balls {m_numHeldCannonBalls}");
             m_cannonFired.Raise(m_cannonRangeIdentifier);
         }
     }

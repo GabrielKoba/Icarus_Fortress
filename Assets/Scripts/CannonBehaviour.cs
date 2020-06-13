@@ -19,6 +19,8 @@ public class CannonBehaviour : MonoBehaviour
     private Animator m_Animator;
     private Animator m_smokeAnimator;
 
+    public bool IsFullyLoaded => m_cannonInventory == CANNON_MAX_CAPACITY;
+
     private const int CANNON_MAX_CAPACITY = 3;
 
     void Awake() {
