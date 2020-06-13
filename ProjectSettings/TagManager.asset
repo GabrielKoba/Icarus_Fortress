@@ -9,6 +9,7 @@ TagManager:
   - CannonTop
   - CannonMiddle
   - CannonBottom
+  - Enemy
   layers:
   - Default
   - TransparentFX

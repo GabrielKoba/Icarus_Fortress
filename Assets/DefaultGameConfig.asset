@@ -17,3 +17,8 @@ MonoBehaviour:
   PlayerGravity: 5
   CannonBallSpeed: 10
   CannonBallDestroyDelay: 5
+  MinDelay: 3
+  MaxDelay: 6
+  SkyFlyMoveSpeed: 2
+  CloudBeetleMoveSpeed: 1
+  WindWaspMoveSpeed: 3
