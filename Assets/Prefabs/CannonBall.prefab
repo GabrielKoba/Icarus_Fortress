@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8964790295150818690}
   - component: {fileID: 1427244254437150034}
   - component: {fileID: -6401632531320922016}
+  - component: {fileID: 3745918173260229656}
+  - component: {fileID: 5260100633964523658}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -95,3 +97,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
+--- !u!61 &3745918173260229656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988173492280286688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15654844, y: 0.15423316}
+  m_EdgeRadius: 0
+--- !u!50 &5260100633964523658
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988173492280286688}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
