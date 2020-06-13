@@ -9,11 +9,28 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
     public bool ShouldSpawnEnemies = true;
 
+    private float m_currentMinDelay;
+    private float m_currentMaxDelay;
+
     // Start is called before the first frame update
     void Start()
     {
+        m_currentMinDelay = m_config.MinDelay;
+        m_currentMaxDelay = m_config.MaxDelay;
+
         StartCoroutine(IntervalStartSpawnRandomEnemies());
+        StartCoroutine(IncreaseDifficultyOverTime());
     }
+
+    private IEnumerator IncreaseDifficultyOverTime()
+     {
+         yield return new WaitForSeconds(m_config.TimeBetweenDifficultyIncrease);
+
+         m_currentMinDelay--;
+         m_currentMaxDelay--;
+
+         Debug.Log($"<color=green>[Increasing difficulty] Min: {m_currentMinDelay} Max: {m_currentMaxDelay}</color>", this);
+     }
 
     private IEnumerator IntervalStartSpawnRandomEnemies()
     {
