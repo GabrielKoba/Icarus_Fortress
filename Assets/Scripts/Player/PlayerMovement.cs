@@ -90,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             //Sound
             FMODUnity.RuntimeManager.PlayOneShot(ballLoadingSFX, transform.position);
 
+            Debug.Log($"Raising event loaded for id {m_cannonRangeIdentifier}");
             m_cannonLoaded.Raise(m_cannonRangeIdentifier);
             m_heldCannonBall.SetActive(false);
             return;

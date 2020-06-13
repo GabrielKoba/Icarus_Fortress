@@ -4,6 +4,9 @@ public class CannonBehaviour : MonoBehaviour
 {
     [SerializeField] private GameObject m_cannonBallSpawnPosition;
     [SerializeField] private GameObject m_cannonBallPrefab;
+    [SerializeField] private SpriteRenderer[] m_capacityIndicators;
+    [SerializeField] private Sprite m_capacityFull;
+    [SerializeField] private Sprite m_capacityEmpty;
 
     private int m_cannonInventory = 0;
 
@@ -15,6 +18,8 @@ public class CannonBehaviour : MonoBehaviour
     [SerializeField] GameObject smokeEffectPrefab;
     private Animator m_Animator;
     private Animator m_smokeAnimator;
+
+    private const int CANNON_MAX_CAPACITY = 3;
 
     void Awake() {
         m_Animator = gameObject.GetComponent<Animator>();
@@ -28,7 +33,11 @@ public class CannonBehaviour : MonoBehaviour
             return;
         }
 
-        m_cannonInventory++;
+        if (m_cannonInventory < CANNON_MAX_CAPACITY)
+        {
+            m_capacityIndicators[m_cannonInventory].sprite = m_capacityFull;
+            m_cannonInventory++;
+        }
     }
 
     public void OnCannonFired(string cannonId)
@@ -39,7 +48,9 @@ public class CannonBehaviour : MonoBehaviour
         }
 
         Instantiate(m_cannonBallPrefab, m_cannonBallSpawnPosition.transform);
+
         m_cannonInventory--;
+        m_capacityIndicators[m_cannonInventory].sprite = m_capacityEmpty;
 
         //Sound
         FMODUnity.RuntimeManager.PlayOneShot(fireSFX, transform.position);
