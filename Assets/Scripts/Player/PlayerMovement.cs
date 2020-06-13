@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string jumpSFX;
+    [FMODUnity.EventRef][SerializeField]string ballPickupSFX;
+    [FMODUnity.EventRef][SerializeField]string ballLoadingSFX;
 
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
@@ -76,12 +78,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && m_canPickupCannonBall)
         {
+            //Sound
+            FMODUnity.RuntimeManager.PlayOneShot(ballPickupSFX, transform.position);
+
             m_heldCannonBall.SetActive(true);
             return;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier) && m_heldCannonBall.activeSelf)
         {
+            //Sound
+            FMODUnity.RuntimeManager.PlayOneShot(ballLoadingSFX, transform.position);
+
             m_cannonLoaded.Raise(m_cannonRangeIdentifier);
             m_heldCannonBall.SetActive(false);
             return;

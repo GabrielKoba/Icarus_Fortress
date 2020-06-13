@@ -7,19 +7,25 @@ public class SkyflyBehaviour : MonoBehaviour
 
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string deathSFX;
+    [FMODUnity.EventRef][SerializeField]string hitAirshipSFX;
 
     public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag != "Enemy")
         {
-            //Sound
-            FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
+            if(other.collider.tag != "AirShip") {
+                //Sound
+                FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
+            }
 
             Destroy(gameObject);
         }
 
         if (other.collider.tag == "AirShip")
         {
+            //Sound
+            FMODUnity.RuntimeManager.PlayOneShot(hitAirshipSFX, transform.position);
+
             m_enemyHitPlayer.Raise(string.Empty);
         }
     }

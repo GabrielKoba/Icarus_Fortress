@@ -548,6 +548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 5059453309949601845, guid: aff3863004151c049a2634842de79555,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aff3863004151c049a2634842de79555, type: 3}
 --- !u!1 &1504752584
@@ -704,6 +709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Airship
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267442877263944241, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_TagString
+      value: AirShip
       objectReference: {fileID: 0}
     - target: {fileID: 7267442877263944243, guid: f016a43d2fcb7f64faa369a44a9f0311,
         type: 3}
