@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7548822920613140654}
   - component: {fileID: 550264395030014366}
   - component: {fileID: -7039074940746951201}
+  - component: {fileID: -7033189906302775479}
   m_Layer: 0
   m_Name: SkyFly
   m_TagString: Enemy
@@ -71,9 +72,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -643339399
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6233011783624852611, guid: 9b299c9bf1842ff4f8f091c4e3afb5f9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -168,3 +169,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-7033189906302775479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574790959137758069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Skyfly
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

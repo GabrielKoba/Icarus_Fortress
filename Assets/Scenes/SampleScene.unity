@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
+  m_timeBetweenDifficultyIncrease: 0
 --- !u!4 &193039732
 Transform:
   m_ObjectHideFlags: 0
@@ -537,6 +538,11 @@ PrefabInstance:
       propertyPath: airShipRopes.Array.data[3]
       value: 
       objectReference: {fileID: 1052833787}
+    - target: {fileID: 5622925511054058394, guid: ca1049cf8ec46714285364dc62dd9dba,
+        type: 3}
+      propertyPath: ropeSnapSFX
+      value: event:/Rope_Snap
+      objectReference: {fileID: 0}
     - target: {fileID: 5622925511054058395, guid: ca1049cf8ec46714285364dc62dd9dba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -794,6 +800,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5680556071661250390, guid: 92b750086f4fea74d82716ed6964c4aa,
+        type: 3}
+      propertyPath: m_capacityFull
+      value: 
+      objectReference: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
+        type: 3}
     - target: {fileID: 7928642810162907553, guid: 92b750086f4fea74d82716ed6964c4aa,
         type: 3}
       propertyPath: m_Name
