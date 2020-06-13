@@ -17,6 +17,7 @@ public class GameConfig : ScriptableObject
     [Header("Enemy Spawner")]
     public float MinDelay = 2f;
     public float MaxDelay = 5f;
+    public float TimeBetweenDifficultyIncrease = 10f;
 
     [Header("Enemies")]
     public float SkyFlyMoveSpeed = 5f;
