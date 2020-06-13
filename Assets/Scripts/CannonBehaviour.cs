@@ -7,6 +7,10 @@ public class CannonBehaviour : MonoBehaviour
 
     private int m_cannonInventory = 0;
 
+    [Header("Audio Settings")]
+    [SerializeField]GameObject audioSource;
+    [FMODUnity.EventRef][SerializeField]string fireSFX;
+
     public void OnCannonLoaded(string cannonId)
     {
         if (cannonId != this.tag)
@@ -26,6 +30,9 @@ public class CannonBehaviour : MonoBehaviour
 
         GameObject.Instantiate(m_cannonBallPrefab, m_cannonBallSpawnPosition.transform);
         m_cannonInventory--;
+
+        //Sound
+        FMODUnity.RuntimeManager.PlayOneShot(fireSFX, audioSource.transform.position);
 
         Debug.Log($"{this.tag} fired!");
     }
