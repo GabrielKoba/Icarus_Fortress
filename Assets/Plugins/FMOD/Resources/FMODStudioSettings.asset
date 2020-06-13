@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: C:/Program Files/FMOD SoundSystem/FMOD Studio 2.00.06/projects/Icarus
     Fortress/Icarus Fortress.fspro
-  sourceBankPath: C:\Program Files\FMOD SoundSystem\FMOD Studio 2.00.06\projects\Icarus
-    Fortress\Build
+  sourceBankPath: Assets/Plugins/FMOD/builds/Desktop
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
