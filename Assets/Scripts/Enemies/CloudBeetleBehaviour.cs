@@ -9,6 +9,9 @@ public class CloudBeetleBehaviour : MonoBehaviour
     [SerializeField] private GameConfig m_config;
     [SerializeField] private GameEventStringParam m_enemyHitPlayer;
 
+    [Header("Audio Settings")]
+    [FMODUnity.EventRef][SerializeField]string deathSFX;
+
     private Transform[] m_spawnPointWorldPositions;
 
     private bool m_isJumpingLanes = false;
@@ -27,6 +30,9 @@ public class CloudBeetleBehaviour : MonoBehaviour
     {
         if (other.collider.tag != "Enemy")
         {
+            //Sound
+            FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
+
             Destroy(gameObject);
         }
 

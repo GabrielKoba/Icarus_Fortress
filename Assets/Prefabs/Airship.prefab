@@ -193,7 +193,6 @@ MonoBehaviour:
   m_cannonBallSpawnPosition: {fileID: 5476605676398893074}
   m_cannonBallPrefab: {fileID: 6988173492280286688, guid: b205ad3a4341ff24bb2fb1e43f799441,
     type: 3}
-  audioSource: {fileID: 0}
   fireSFX: event:/Cannon_Fire
 --- !u!114 &611200653364809679
 MonoBehaviour:
@@ -264,7 +263,6 @@ MonoBehaviour:
   m_cannonBallSpawnPosition: {fileID: 8666479551873079824}
   m_cannonBallPrefab: {fileID: 6988173492280286688, guid: b205ad3a4341ff24bb2fb1e43f799441,
     type: 3}
-  audioSource: {fileID: 0}
   fireSFX: event:/Cannon_Fire
 --- !u!1 &1739939215249503770
 GameObject:
@@ -483,8 +481,8 @@ GameObject:
   - component: {fileID: 6440810986789793669}
   - component: {fileID: 1596892922}
   m_Layer: 0
-  m_Name: WallCollider
-  m_TagString: Untagged
+  m_Name: WallColliderRight
+  m_TagString: AirShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -684,7 +682,7 @@ GameObject:
   - component: {fileID: 8025605671417244973}
   - component: {fileID: 1488066236988884467}
   m_Layer: 0
-  m_Name: WallCollider
+  m_Name: WallColliderLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1045,7 +1043,6 @@ MonoBehaviour:
   m_cannonBallSpawnPosition: {fileID: 8103529638581782668}
   m_cannonBallPrefab: {fileID: 6988173492280286688, guid: b205ad3a4341ff24bb2fb1e43f799441,
     type: 3}
-  audioSource: {fileID: 0}
   fireSFX: event:/Cannon_Fire
 --- !u!114 &8715864903863920886
 MonoBehaviour:
@@ -1225,7 +1222,7 @@ PrefabInstance:
     - target: {fileID: 3266387796930567130, guid: fd8c9a2823a51c543a9c3928aaa3e5f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.441
+      value: -0.441
       objectReference: {fileID: 0}
     - target: {fileID: 3266387796930567130, guid: fd8c9a2823a51c543a9c3928aaa3e5f3,
         type: 3}

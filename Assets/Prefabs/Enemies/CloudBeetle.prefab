@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5315592852089038897}
   - component: {fileID: 9216974927472994520}
   - component: {fileID: 4802437307526914882}
+  - component: {fileID: -5161995621472359001}
   m_Layer: 0
   m_Name: CloudBeetle
   m_TagString: Enemy
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 574790959137758069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,8 +74,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0.97121596, b: 1, a: 1}
+  m_Sprite: {fileID: -7677934931129672218, guid: 64112ef9922747040b28600af34cfb31,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,10 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   m_enemyHitPlayer: {fileID: 11400000, guid: ee3e5b61636a22e469a7c46e6a450feb, type: 2}
-  m_spawnPoints:
-  - {fileID: 4372864020040709292, guid: 8e046f2effaadf34ab27f44582354e22, type: 3}
-  - {fileID: 143977242315155855, guid: 21ced60a57b467e49a981aae531d3558, type: 3}
-  - {fileID: 3761215510289279725, guid: 584724f4b7ffdf24c912885198427677, type: 3}
+  audioSource: {fileID: 0}
+  deathSFX: event:/Enemy_Death
 --- !u!61 &9216974927472994520
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -117,9 +117,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 2, y: 1}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,3 +149,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!95 &-5161995621472359001
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574790959137758069}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7804e3f67931fdd4dac2d248cff56aeb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

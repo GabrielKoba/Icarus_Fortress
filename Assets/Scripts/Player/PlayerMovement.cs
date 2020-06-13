@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameEventStringParam m_cannonLoaded;
     [SerializeField] private GameEventStringParam m_cannonFired;
 
+    [Header("Audio Settings")]
+    [FMODUnity.EventRef][SerializeField]string jumpSFX;
+
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
     private bool m_canPickupCannonBall = false;
@@ -65,6 +68,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            //Sound
+            FMODUnity.RuntimeManager.PlayOneShot(jumpSFX, transform.position);
+            
             m_jump = true;
         }
 
