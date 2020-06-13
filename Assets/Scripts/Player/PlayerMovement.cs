@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer[] m_capacityIndicators;
     [SerializeField] private Sprite m_capacityFull;
     [SerializeField] private Sprite m_capacityEmpty;
+    [SerializeField] private GameObject m_loadingBar;
 
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string jumpSFX;
@@ -22,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
     private bool m_canPickupCannonBall = false;
+    private bool m_isPickingUpCannonBall = false;
 
     private string m_cannonRangeIdentifier;
 
@@ -69,6 +72,43 @@ public class PlayerMovement : MonoBehaviour
         m_rigidBody.gravityScale = m_gameConfig.PlayerGravity;
     }
 
+    private IEnumerator TryPickingUpCannonBall()
+    {
+        var time = 0f;
+
+        while (time < m_gameConfig.PlayerPickingUpCannonBallCoolDown)
+        {
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                m_isPickingUpCannonBall = false;
+                m_loadingBar.transform.localScale = new Vector3(m_loadingBar.transform.localScale.x, 0f, m_loadingBar.transform.localScale.z);
+                yield break;
+            }
+
+            var factor = time / m_gameConfig.PlayerPickingUpCannonBallCoolDown;
+
+            Debug.Log("Factor" + factor);
+            time += Time.deltaTime;
+
+            m_loadingBar.transform.localScale = new Vector3(m_loadingBar.transform.localScale.x, factor, m_loadingBar.transform.localScale.z);
+            yield return null;
+        }
+
+        // Success!
+        m_loadingBar.transform.localScale = new Vector3(m_loadingBar.transform.localScale.x, 0f, m_loadingBar.transform.localScale.z);
+
+        FMODUnity.RuntimeManager.PlayOneShot(ballPickupSFX, transform.position);
+
+        if (m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
+        {
+            m_capacityIndicators[m_numHeldCannonBalls].sprite = m_capacityFull;
+            m_numHeldCannonBalls++;
+        }
+
+        m_heldCannonBall.SetActive(true);
+        m_isPickingUpCannonBall = false;
+    }
+
     private void Update()
     {
         m_horizontalMove = Input.GetAxisRaw("Horizontal") * m_gameConfig.PlayerMoveSpeed;
@@ -81,20 +121,12 @@ public class PlayerMovement : MonoBehaviour
             m_jump = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && m_canPickupCannonBall)
+        // Picking Up!
+        if (Input.GetKey(KeyCode.E) && m_canPickupCannonBall && !m_isPickingUpCannonBall && m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
         {
-            //Sound
-            FMODUnity.RuntimeManager.PlayOneShot(ballPickupSFX, transform.position);
-
-            if (m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
-            {
-                m_capacityIndicators[m_numHeldCannonBalls].sprite = m_capacityFull;
-                m_numHeldCannonBalls++;
-            }
-            m_heldCannonBall.SetActive(true);
-            return;
+            m_isPickingUpCannonBall = true;
+            StartCoroutine(TryPickingUpCannonBall());
         }
-
 
         // Loading
         if (Input.GetKeyDown(KeyCode.E) && !string.IsNullOrEmpty(m_cannonRangeIdentifier) && m_heldCannonBall.activeSelf && !GameObject.FindGameObjectWithTag(m_cannonRangeIdentifier).GetComponent<CannonBehaviour>().IsFullyLoaded)

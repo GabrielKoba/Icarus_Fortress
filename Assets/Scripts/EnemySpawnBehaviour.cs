@@ -34,8 +34,6 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
     private IEnumerator IntervalStartSpawnRandomEnemies()
     {
-        var delay = 2f;
-
         while (ShouldSpawnEnemies)
         {
             var currentDelay = Random.Range(m_config.MinDelay, m_config.MaxDelay);
