@@ -28,7 +28,7 @@ public class CannonBehaviour : MonoBehaviour
             return;
         }
 
-        GameObject.Instantiate(m_cannonBallPrefab, m_cannonBallSpawnPosition.transform);
+        Instantiate(m_cannonBallPrefab, m_cannonBallSpawnPosition.transform);
         m_cannonInventory--;
 
         //Sound
