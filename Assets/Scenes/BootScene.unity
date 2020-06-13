@@ -1470,7 +1470,7 @@ Transform:
   m_GameObject: {fileID: 381058456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.43817902, y: 0.15399551, z: 1.292}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1741828796}
   - {fileID: 891339529}
@@ -2902,7 +2902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &948874442
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2935,7 +2935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutUIImage: {fileID: 948874444}
-  fadeSpeed: 3
+  fadeSpeed: 2
   fadeOutOnStart: 0
 --- !u!114 &948874444
 MonoBehaviour:
@@ -3128,7 +3128,7 @@ RectTransform:
   m_GameObject: {fileID: 977981184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6290161, y: 0.6290161, z: 0.6290161}
+  m_LocalScale: {x: 0.67933744, y: 0.67933744, z: 0.67933744}
   m_Children:
   - {fileID: 478471188}
   - {fileID: 693174320}
@@ -3140,7 +3140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114.84, y: 28}
+  m_AnchoredPosition: {x: 120.9, y: 28.581}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1199996502
@@ -4699,7 +4699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1913769733
 MonoBehaviour:
   m_ObjectHideFlags: 0
