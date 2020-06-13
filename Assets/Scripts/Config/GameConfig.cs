@@ -13,6 +13,7 @@ public class GameConfig : ScriptableObject
     public float PlayerJumpForce = 600f;
     public float PlayerGravity = 3f;
     public int PlayerStartingLives = 3;
+    public float PlayerPickingUpCannonBallCoolDown = 0.9f;
 
     [Header("Enemy Spawner")]
     public float MinDelay = 2f;

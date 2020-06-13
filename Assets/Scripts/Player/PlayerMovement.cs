@@ -87,7 +87,6 @@ public class PlayerMovement : MonoBehaviour
 
             var factor = time / m_gameConfig.PlayerPickingUpCannonBallCoolDown;
 
-            Debug.Log("Factor" + factor);
             time += Time.deltaTime;
 
             m_loadingBar.transform.localScale = new Vector3(m_loadingBar.transform.localScale.x, factor, m_loadingBar.transform.localScale.z);
