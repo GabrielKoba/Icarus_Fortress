@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1975319739856892695}
   - component: {fileID: 8416801671771343815}
-  - component: {fileID: 886386401767349317}
+  - component: {fileID: 5315592852089038897}
   m_Layer: 0
-  m_Name: SkyFly
+  m_Name: CloudBeetle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0.6964086, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.97121596, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &886386401767349317
+--- !u!114 &5315592852089038897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 574790959137758069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0800ef5b8d4490b521a07a17b1d9fe, type: 3}
+  m_Script: {fileID: 11500000, guid: c3205f56ff8042cfae4f2d5f573dcd2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
