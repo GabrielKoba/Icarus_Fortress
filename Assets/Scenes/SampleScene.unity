@@ -673,6 +673,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Airship
       objectReference: {fileID: 0}
+    - target: {fileID: 3950441357656067891, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_Name
+      value: WallColliderRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950441357656067891, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_TagString
+      value: AirShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313581367513467293, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_Name
+      value: WallColliderLeft
+      objectReference: {fileID: 0}
     - target: {fileID: 6864756330119312744, guid: f016a43d2fcb7f64faa369a44a9f0311,
         type: 3}
       propertyPath: audioSource

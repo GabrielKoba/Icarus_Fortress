@@ -13,6 +13,7 @@ TagManager:
   - SpawnPointTop
   - SpawnPointMiddle
   - SpawnPointBottom
+  - AirShip
   layers:
   - Default
   - TransparentFX
