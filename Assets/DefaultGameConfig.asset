@@ -18,6 +18,7 @@ MonoBehaviour:
   PlayerJumpForce: 800
   PlayerGravity: 5
   PlayerStartingLives: 4
+  PlayerPickingUpCannonBallCoolDown: 0.9
   MinDelay: 1
   MaxDelay: 7
   TimeBetweenDifficultyIncrease: 10
