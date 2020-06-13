@@ -7,10 +7,15 @@ public class PlayerLivesHandler : MonoBehaviour
 {
     [SerializeField] private GameConfig m_config;
     [SerializeField] private Text m_debugText;
+    [SerializeField] List<GameObject> airShipRopes;
+    private int nextRope = 0;
 
     private int m_currentLives;
 
     private bool m_isDead = false;
+
+    [Header("Audio Settings")]
+    [FMODUnity.EventRef][SerializeField]string ropeSnapSFX;
 
     private void Start()
     {
@@ -24,6 +29,13 @@ public class PlayerLivesHandler : MonoBehaviour
         {
             return;
         }
+
+        //Sound
+        FMODUnity.RuntimeManager.PlayOneShot(ropeSnapSFX, transform.position);
+        //
+
+        airShipRopes[nextRope].SetActive(false);
+        nextRope++;
 
         m_currentLives--;
         m_debugText.text = $"Player Lives: {m_currentLives}";

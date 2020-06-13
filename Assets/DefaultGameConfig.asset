@@ -17,9 +17,9 @@ MonoBehaviour:
   PlayerMoveSpeed: 150
   PlayerJumpForce: 800
   PlayerGravity: 5
-  PlayerStartingLives: 3
-  MinDelay: 7
-  MaxDelay: 13
+  PlayerStartingLives: 4
+  MinDelay: 1
+  MaxDelay: 7
   TimeBetweenDifficultyIncrease: 10
   SkyFlyMoveSpeed: 1.7
   CloudBeetleMoveSpeed: 1.3
