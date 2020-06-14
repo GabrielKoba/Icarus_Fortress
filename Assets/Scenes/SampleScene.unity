@@ -792,6 +792,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5622925509355676966, guid: ca1049cf8ec46714285364dc62dd9dba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5622925511054058394, guid: ca1049cf8ec46714285364dc62dd9dba,
         type: 3}
       propertyPath: airShipRopes.Array.data[0]
@@ -925,7 +930,7 @@ PrefabInstance:
     - target: {fileID: 5622925511054058399, guid: ca1049cf8ec46714285364dc62dd9dba,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca1049cf8ec46714285364dc62dd9dba, type: 3}
