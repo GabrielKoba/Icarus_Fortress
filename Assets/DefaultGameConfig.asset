@@ -21,10 +21,10 @@ MonoBehaviour:
   PlayerStartingLives: 4
   PlayerPickingUpCannonBallCoolDown: 0.3
   PlayerPickingUpBiggestCannonBallCoolDown: 1.2
-  MinDelay: 5
-  MaxDelay: 13
+  MinDelay: 6
+  MaxDelay: 10
   TimeBetweenDifficultyIncrease: 9
-  TimeDeltaDecreaseDelays: 0.5
+  TimeDeltaDecreaseDelays: 0.4
   WeightBasicEnemy: 15
   WeightMediumEnemy: 2
   WeightHardEnemy: 0
