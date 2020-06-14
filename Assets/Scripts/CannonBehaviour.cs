@@ -1,12 +1,18 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class CannonBehaviour : MonoBehaviour
 {
     [SerializeField] private GameObject m_cannonBallSpawnPosition;
     [SerializeField] private GameObject m_cannonBallPrefab;
+    [SerializeField] private GameObject m_cannonBallBigPrefab;
+
     [SerializeField] private SpriteRenderer[] m_capacityIndicators;
     [SerializeField] private Sprite m_capacityFull;
     [SerializeField] private Sprite m_capacityEmpty;
+    [SerializeField] private Sprite m_capacityBig;
 
     private int m_cannonInventory = 0;
 
@@ -30,14 +36,18 @@ public class CannonBehaviour : MonoBehaviour
 
     public void OnCannonLoaded(string cannonId)
     {
-        if (cannonId != this.tag)
+        var parameters = cannonId.Split(',').ToList<string>();
+
+        if (parameters[0] != this.tag)
         {
             return;
         }
 
         if (m_cannonInventory < CANNON_MAX_CAPACITY)
         {
-            m_capacityIndicators[m_cannonInventory].sprite = m_capacityFull;
+            bool loadBigSprite = parameters[1] == "Cannon_Capacity_3";
+
+            m_capacityIndicators[m_cannonInventory].sprite = loadBigSprite ? m_capacityBig : m_capacityFull;
             m_cannonInventory++;
         }
     }
@@ -49,9 +59,18 @@ public class CannonBehaviour : MonoBehaviour
             return;
         }
 
-        Instantiate(m_cannonBallPrefab, m_cannonBallSpawnPosition.transform);
-
         m_cannonInventory--;
+
+        bool isBigBall = m_capacityIndicators[m_cannonInventory].sprite.name == "Cannon_Capacity_3";
+        var prefab = isBigBall ? m_cannonBallBigPrefab : m_cannonBallPrefab;
+        Instantiate(prefab, m_cannonBallSpawnPosition.transform);
+
+        if (isBigBall)
+        {
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>().shakeDuration = 0.15f;
+
+        }
+
         m_capacityIndicators[m_cannonInventory].sprite = m_capacityEmpty;
 
         //Sound

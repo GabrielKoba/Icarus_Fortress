@@ -13,8 +13,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameEventStringParam m_cannonFired;
     [SerializeField] private SpriteRenderer[] m_capacityIndicators;
     [SerializeField] private Sprite m_capacityFull;
+    [SerializeField] private Sprite m_capacityFullBiggest;
     [SerializeField] private Sprite m_capacityEmpty;
     [SerializeField] private GameObject m_loadingBar;
+
+    [SerializeField] private Sprite m_bigCannonBallSprite;
+    [SerializeField] private Sprite m_defaultCannonBallSprite;
 
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string jumpSFX;
@@ -23,14 +27,15 @@ public class PlayerMovement : MonoBehaviour
 
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
-    private bool m_canPickupCannonBall = false;
+
+    private string m_ballPileRangeIdentifier;
+    //private bool m_canPickupCannonBall = false;
     private bool m_isPickingUpCannonBall = false;
 
     private string m_cannonRangeIdentifier;
 
     private int m_numHeldCannonBalls = 0;
     private const int PLAYER_MAX_CANNONBALLS = 3;
-    private const string BALL_PILE_COLLIDER_TAG = "BallPile";
 
     private readonly HashSet<string> m_cannonTags = new HashSet<string>()
     {
@@ -39,11 +44,18 @@ public class PlayerMovement : MonoBehaviour
         "CannonBottom"
     };
 
+    private readonly HashSet<string> m_ballPileTags = new HashSet<string>()
+    {
+        "BallPile",
+        "BallPileRed",
+        "BallPileBlue"
+    };
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(BALL_PILE_COLLIDER_TAG))
+        if (m_ballPileTags.Contains(other.tag))
         {
-            m_canPickupCannonBall = true;
+            m_ballPileRangeIdentifier = other.tag;
             return;
         }
 
@@ -55,9 +67,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag(BALL_PILE_COLLIDER_TAG))
+        if (m_ballPileTags.Contains(other.tag))
         {
-            m_canPickupCannonBall = false;
+            m_ballPileRangeIdentifier = string.Empty;
+            return;
         }
 
         if (m_cannonTags.Contains(other.tag))
@@ -72,11 +85,13 @@ public class PlayerMovement : MonoBehaviour
         m_rigidBody.gravityScale = m_gameConfig.PlayerGravity;
     }
 
-    private IEnumerator TryPickingUpCannonBall()
+    private IEnumerator TryPickingUpCannonBall(bool isBigCannonBall)
     {
         var time = 0f;
 
-        while (time < m_gameConfig.PlayerPickingUpCannonBallCoolDown)
+        var cooldown = isBigCannonBall ? m_gameConfig.PlayerPickingUpBiggestCannonBallCoolDown : m_gameConfig.PlayerPickingUpCannonBallCoolDown;
+
+        while (time < cooldown)
         {
             if (Input.GetKeyUp(KeyCode.E))
             {
@@ -85,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
                 yield break;
             }
 
-            var factor = time / m_gameConfig.PlayerPickingUpCannonBallCoolDown;
+            var factor = time / cooldown;
 
             time += Time.deltaTime;
 
@@ -100,8 +115,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
         {
-            m_capacityIndicators[m_numHeldCannonBalls].sprite = m_capacityFull;
+            m_capacityIndicators[m_numHeldCannonBalls].sprite = isBigCannonBall ? m_capacityFullBiggest : m_capacityFull;
             m_numHeldCannonBalls++;
+        }
+
+        if (isBigCannonBall)
+        {
+            m_heldCannonBall.GetComponent<SpriteRenderer>().sprite = m_bigCannonBallSprite;
+        }
+        else
+        {
+            m_heldCannonBall.GetComponent<SpriteRenderer>().sprite = m_defaultCannonBallSprite;
         }
 
         m_heldCannonBall.SetActive(true);
@@ -121,10 +145,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Picking Up!
-        if (Input.GetKey(KeyCode.E) && m_canPickupCannonBall && !m_isPickingUpCannonBall && m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
+        if (Input.GetKey(KeyCode.E) && !string.IsNullOrEmpty(m_ballPileRangeIdentifier) && !m_isPickingUpCannonBall && m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
         {
             m_isPickingUpCannonBall = true;
-            StartCoroutine(TryPickingUpCannonBall());
+            StartCoroutine(TryPickingUpCannonBall(m_ballPileRangeIdentifier == "BallPileRed"));
         }
 
         // Loading
@@ -133,14 +157,26 @@ public class PlayerMovement : MonoBehaviour
             //Sound
             FMODUnity.RuntimeManager.PlayOneShot(ballLoadingSFX, transform.position);
 
-            Debug.Log($"Loading! Num held balls {m_numHeldCannonBalls}");
-            m_cannonLoaded.Raise(m_cannonRangeIdentifier);
 
             m_numHeldCannonBalls--;
+            Debug.Log($"Loading! Num held balls {m_numHeldCannonBalls}");
+            m_cannonLoaded.Raise($"{m_cannonRangeIdentifier},{m_capacityIndicators[m_numHeldCannonBalls].sprite.name}");
+
             m_capacityIndicators[m_numHeldCannonBalls].sprite = m_capacityEmpty;
             if (m_numHeldCannonBalls == 0)
             {
                 m_heldCannonBall.SetActive(false);
+            }
+            else
+            {
+                if (m_capacityIndicators[m_numHeldCannonBalls - 1].sprite.name == "Cannon_Capacity_3")
+                {
+                    m_heldCannonBall.GetComponent<SpriteRenderer>().sprite = m_bigCannonBallSprite;
+                }
+                else
+                {
+                    m_heldCannonBall.GetComponent<SpriteRenderer>().sprite = m_defaultCannonBallSprite;
+                }
             }
 
             return;

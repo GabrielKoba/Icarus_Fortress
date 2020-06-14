@@ -14,6 +14,7 @@ TagManager:
   - SpawnPointMiddle
   - SpawnPointBottom
   - AirShip
+  - BallPileRed
   layers:
   - Default
   - TransparentFX

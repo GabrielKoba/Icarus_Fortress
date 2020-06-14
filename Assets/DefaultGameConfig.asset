@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c1d62018590254a8f1b7c2bbcb1af9, type: 3}
   m_Name: DefaultGameConfig
   m_EditorClassIdentifier: 
+  CannonBallBigSpeed: 3
   CannonBallSpeed: 12
   CannonBallDestroyDelay: 5
   PlayerMoveSpeed: 150
@@ -19,6 +20,7 @@ MonoBehaviour:
   PlayerGravity: 5
   PlayerStartingLives: 4
   PlayerPickingUpCannonBallCoolDown: 0.3
+  PlayerPickingUpBiggestCannonBallCoolDown: 1.2
   MinDelay: 5
   MaxDelay: 13
   TimeBetweenDifficultyIncrease: 9

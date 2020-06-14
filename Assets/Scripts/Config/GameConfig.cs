@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DefaultGameConfig", menuName = "ScriptableObjects/GameConfig", order = 1)]
 public class GameConfig : ScriptableObject
 {
+    public float CannonBallBigSpeed = 2.5f;
     public float CannonBallSpeed = 5f;
     public float CannonBallDestroyDelay = 5f;
 
@@ -14,6 +15,7 @@ public class GameConfig : ScriptableObject
     public float PlayerGravity = 3f;
     public int PlayerStartingLives = 3;
     public float PlayerPickingUpCannonBallCoolDown = 0.9f;
+    public float PlayerPickingUpBiggestCannonBallCoolDown = 0.9f;
 
     [Header("Enemy Spawner")]
     public float MinDelay = 7f;

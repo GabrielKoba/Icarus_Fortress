@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5714736932597609490, guid: 23f1fb6233b9f5048b34010b558c495b,
+  m_Sprite: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -128,7 +128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1125142517774374573
 Transform:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5714736932597609490, guid: 23f1fb6233b9f5048b34010b558c495b,
+  m_Sprite: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -477,11 +477,17 @@ MonoBehaviour:
   - {fileID: 3081899635618575638}
   - {fileID: 1004118048597511167}
   - {fileID: 8492995274188469797}
-  m_capacityFull: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
+  m_capacityFull: {fileID: 4777462009447521052, guid: 23f1fb6233b9f5048b34010b558c495b,
     type: 3}
-  m_capacityEmpty: {fileID: -5714736932597609490, guid: 23f1fb6233b9f5048b34010b558c495b,
+  m_capacityFullBiggest: {fileID: 7939019810807140365, guid: 23f1fb6233b9f5048b34010b558c495b,
+    type: 3}
+  m_capacityEmpty: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
     type: 3}
   m_loadingBar: {fileID: 6983597677577599568}
+  m_bigCannonBallSprite: {fileID: 21300000, guid: 315f67c4ab153564cacd21325f4252b8,
+    type: 3}
+  m_defaultCannonBallSprite: {fileID: 21300000, guid: eedce4a55c194904bb4589c68562b96f,
+    type: 3}
   jumpSFX: event:/Player_Jump
   ballPickupSFX: event:/Cannon_Ball_Pickup
   ballLoadingSFX: event:/Cannon_Ball_Loading
@@ -604,7 +610,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5714736932597609490, guid: 23f1fb6233b9f5048b34010b558c495b,
+  m_Sprite: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
