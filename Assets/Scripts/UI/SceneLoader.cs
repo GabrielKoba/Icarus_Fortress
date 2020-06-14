@@ -19,6 +19,8 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private Text m_pickupText;
     [SerializeField] private Text m_fireText;
 
+    [SerializeField] private GameObject m_indicators;
+
     private bool m_textIsComplete = false;
 
     private int m_shotsFired;
@@ -53,6 +55,8 @@ public class SceneLoader : MonoBehaviour
         m_boundaryLeft.transform.localPosition = new Vector3(-9.1f, m_boundaryLeft.transform.localPosition.y, m_boundaryLeft.transform.localPosition.z);
 
         yield return new WaitForSeconds(2.5f);
+
+        m_indicators.SetActive(true);
 
         StartCoroutine(FadeOutRoutine(2.5f, m_text, true));
 
