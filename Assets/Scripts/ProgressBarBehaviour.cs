@@ -22,8 +22,6 @@ public class ProgressBarBehaviour : MonoBehaviour
     {
         var distance = Mathf.Abs(m_startPos.localPosition.x - m_endPos.localPosition.x);
 
-        Debug.Log("TOTAL dist" + distance);
-
         while (m_startPos.localPosition.x <= m_endPos.localPosition.x)
         {
             m_time += Time.deltaTime;
