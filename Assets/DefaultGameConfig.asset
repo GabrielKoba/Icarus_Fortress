@@ -19,8 +19,8 @@ MonoBehaviour:
   PlayerGravity: 5
   PlayerStartingLives: 4
   PlayerPickingUpCannonBallCoolDown: 0.3
-  MinDelay: 1
-  MaxDelay: 7
+  MinDelay: 7
+  MaxDelay: 13
   TimeBetweenDifficultyIncrease: 10
   SkyFlyMoveSpeed: 1.5
   CloudBeetleMoveSpeed: 1
