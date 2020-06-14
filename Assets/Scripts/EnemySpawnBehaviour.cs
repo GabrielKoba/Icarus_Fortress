@@ -12,11 +12,16 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
     [SerializeField] private Animator m_bossCannonAnimator;
     [SerializeField] private Animator m_bossSmokeAnimator;
+    [SerializeField] private GameObject m_enemyContainer;
 
     public bool ShouldSpawnEnemies = true;
 
     private float m_currentMinDelay;
     private float m_currentMaxDelay;
+
+    private bool m_uppedBossDifficulty = false;
+
+    private Coroutine m_enemyCoroutine;
 
     private readonly float[] m_weights = new float[3];
     private const float BOSS_SHIP_FINAL_POS_X = 7.4f;
@@ -31,7 +36,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
         m_currentMinDelay = m_config.MinDelay;
         m_currentMaxDelay = m_config.MaxDelay;
 
-        StartCoroutine(IntervalStartSpawnRandomEnemies());
+        m_enemyCoroutine = StartCoroutine(IntervalStartSpawnRandomEnemies());
         StartCoroutine(IncreaseDifficultyOverTime());
     }
 
@@ -57,18 +62,34 @@ public class EnemySpawnBehaviour : MonoBehaviour
     private IEnumerator AnimateAndActivateBossShip()
     {
         Debug.Log("Spawning boss!");
+        m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned = true;
         while (m_bossShipTransform.transform.position.x > BOSS_SHIP_FINAL_POS_X)
         {
-            m_bossShipTransform.transform.position -= new Vector3(0.1f * Time.deltaTime, 0f, 0f);
+            m_bossShipTransform.transform.position -= new Vector3(5f * Time.deltaTime, 0f, 0f);
             yield return null;
         }
+    }
 
-        m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned = true;
+    private void SetBossDifficulty()
+    {
+        StopCoroutine(m_enemyCoroutine);
+        m_currentMinDelay = 2f;
+        m_currentMaxDelay = 4f;
+        m_weights[0] = 0;
+        m_weights[1] = 0;
+        m_weights[2] = 0;
+        StartCoroutine(IntervalStartSpawnRandomEnemies());
     }
 
     private void Update()
     {
-        if (Time.time > m_config.TimeBeforeBossSpawn && m_bossShipTransform != null)
+        if (Time.time > m_config.TimeBeforeBossSpawn && !m_uppedBossDifficulty)
+        {
+            m_uppedBossDifficulty = true;
+            SetBossDifficulty();
+        }
+
+        if (Time.time > m_config.TimeBeforeBossSpawn && m_bossShipTransform != null && !m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned)
         {
             StartCoroutine(AnimateAndActivateBossShip());
         }
@@ -94,13 +115,15 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
     private IEnumerator IntervalStartSpawnRandomEnemies()
     {
-        while (ShouldSpawnEnemies)
+        while (ShouldSpawnEnemies )
         {
             var currentDelay = Random.Range(m_currentMinDelay, m_currentMaxDelay);
             yield return new WaitForSeconds(currentDelay);
 
             var index = GetRandomWeightedIndex();
-            Instantiate(m_enemies[index], transform);
+            var go = Instantiate(m_enemies[index], transform);
+
+            go.transform.SetParent(m_enemyContainer.transform);
 
             m_bossCannonAnimator.SetTrigger("Fire");
             m_bossSmokeAnimator.SetTrigger("Fire");
