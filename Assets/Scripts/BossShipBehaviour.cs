@@ -40,6 +40,7 @@ public class BossShipBehaviour : MonoBehaviour
         if (m_lives == 0)
         {
             StartCoroutine(AnimateShipDeath());
+            StartCoroutine(LoadSceneAgainAfterDelay());
         }
     }
 
@@ -51,5 +52,11 @@ public class BossShipBehaviour : MonoBehaviour
             this.transform.position -= new Vector3(0f, 5f * Time.deltaTime, 0f);
             yield return null;
         }
+    }
+
+    private IEnumerator LoadSceneAgainAfterDelay()
+    {
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, "SampleScene"));
     }
 }

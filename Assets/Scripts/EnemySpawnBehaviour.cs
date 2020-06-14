@@ -26,6 +26,8 @@ public class EnemySpawnBehaviour : MonoBehaviour
     private readonly float[] m_weights = new float[3];
     private const float BOSS_SHIP_FINAL_POS_X = 7.4f;
 
+    private float m_bossTimeAccumulator = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,8 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
         m_enemyCoroutine = StartCoroutine(IntervalStartSpawnRandomEnemies());
         StartCoroutine(IncreaseDifficultyOverTime());
+
+        m_bossTimeAccumulator = 0f;
     }
 
     private IEnumerator IncreaseDifficultyOverTime()
@@ -83,16 +87,18 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time > m_config.TimeBeforeBossSpawn && !m_uppedBossDifficulty)
+        if (m_bossTimeAccumulator > m_config.TimeBeforeBossSpawn && !m_uppedBossDifficulty)
         {
             m_uppedBossDifficulty = true;
             SetBossDifficulty();
         }
 
-        if (Time.time > m_config.TimeBeforeBossSpawn && m_bossShipTransform != null && !m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned)
+        if (m_bossTimeAccumulator > m_config.TimeBeforeBossSpawn && m_bossShipTransform != null && !m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned)
         {
             StartCoroutine(AnimateAndActivateBossShip());
         }
+
+        m_bossTimeAccumulator += Time.deltaTime;
     }
 
     private int GetRandomWeightedIndex()

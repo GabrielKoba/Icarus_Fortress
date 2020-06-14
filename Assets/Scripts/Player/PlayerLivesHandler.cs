@@ -43,6 +43,14 @@ public class PlayerLivesHandler : MonoBehaviour
         {
             m_isDead = true;
             m_debugText.text = "Death!";
+
+            StartCoroutine(LoadSceneAgainAfterDelay());
         }
+    }
+
+    private IEnumerator LoadSceneAgainAfterDelay()
+    {
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, "SampleScene"));
     }
 }
