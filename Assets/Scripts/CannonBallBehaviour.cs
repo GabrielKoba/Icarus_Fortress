@@ -24,7 +24,7 @@ public class CannonBallBehaviour : MonoBehaviour
     private IEnumerator DestroyAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        Destroy(this);
+        Destroy(gameObject);
     }
 
     private void Update()
