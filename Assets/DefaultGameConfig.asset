@@ -21,11 +21,11 @@ MonoBehaviour:
   PlayerStartingLives: 4
   PlayerPickingUpCannonBallCoolDown: 0.3
   PlayerPickingUpBiggestCannonBallCoolDown: 1.2
-  MinDelay: 8
-  MaxDelay: 12
+  MinDelay: 4
+  MaxDelay: 25
   TimeBetweenDifficultyIncrease: 9
   TimeDeltaDecreaseDelays: 0.4
-  WeightBasicEnemy: 20
+  WeightBasicEnemy: 40
   WeightMediumEnemy: 2
   WeightHardEnemy: 0
   SkyFlyMoveSpeed: 1.5
