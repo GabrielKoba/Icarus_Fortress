@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   m_enemyHitPlayer: {fileID: 11400000, guid: ee3e5b61636a22e469a7c46e6a450feb, type: 2}
+  deathEffectPrefab: {fileID: 2948715561558024431, guid: 45b42711ee04d5849bf3fdf7f95f5c88,
+    type: 3}
   deathSFX: event:/Enemy_Death
   hitAirshipSFX: event:/Airship_Hit
 --- !u!61 &9216974927472994520

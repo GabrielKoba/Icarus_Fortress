@@ -9,6 +9,8 @@ public class CloudBeetleBehaviour : MonoBehaviour
     [SerializeField] private GameConfig m_config;
     [SerializeField] private GameEventStringParam m_enemyHitPlayer;
 
+    [SerializeField] GameObject deathEffectPrefab;
+
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string deathSFX;
     [FMODUnity.EventRef][SerializeField]string hitAirshipSFX;
@@ -36,6 +38,7 @@ public class CloudBeetleBehaviour : MonoBehaviour
                 FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
             }
 
+            Instantiate(deathEffectPrefab, transform.position, transform.rotation);
             Destroy(gameObject);
         }
 
