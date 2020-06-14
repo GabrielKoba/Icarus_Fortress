@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     [FMODUnity.EventRef][SerializeField]string ballPickupSFX;
     [FMODUnity.EventRef][SerializeField]string ballLoadingSFX;
 
+    public bool m_isControlledByTutorial = false;
+
     private float m_horizontalMove = 0f;
     private bool m_jump = false;
 
@@ -36,6 +39,9 @@ public class PlayerMovement : MonoBehaviour
 
     private int m_numHeldCannonBalls = 0;
     private const int PLAYER_MAX_CANNONBALLS = 3;
+
+    private bool m_hasTutJumped = false;
+    private bool m_hasTutHitted = false;
 
     public static float PickingUpCooldownBig;
 
@@ -81,12 +87,73 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (m_isControlledByTutorial && other.gameObject.name == "Platform1")
+        {
+            m_horizontalMove = 0f;
+            StartCoroutine(AnimateShipUp());
+            StartCoroutine(LoadSceneAfterDelay());
+        }
+    }
+
+    private IEnumerator LoadSceneAfterDelay()
+    {
+        yield return new WaitForSeconds(4f);
+        StartCoroutine(GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, "SampleScene"));
+    }
+
+    private IEnumerator AnimateShipUp()
+    {
+        var time = 0f;
+        var ship = GameObject.FindGameObjectWithTag("AirShip");
+
+        yield return new WaitForSeconds(1f);
+        while (time < 10f)
+        {
+            time += Time.deltaTime;
+            ship.transform.localPosition += new Vector3(0f, 2.5f* Time.deltaTime, 0f);
+
+            yield return null;
+        }
+    }
+
     private void Start()
     {
         PickingUpCooldownBig = m_gameConfig.PlayerPickingUpBiggestCannonBallCoolDown;
 
         m_controller.m_JumpForce = m_gameConfig.PlayerJumpForce;
         m_rigidBody.gravityScale = m_gameConfig.PlayerGravity;
+    }
+
+    public void MoveForTutorial()
+    {
+        m_isControlledByTutorial = true;
+        StartCoroutine(AutoMoveCamera());
+        StartCoroutine(AutoMovePlayer());
+    }
+
+    private IEnumerator AutoMoveCamera()
+    {
+
+        var camera = GameObject.FindGameObjectWithTag("FakeCamera");
+
+        while (camera.transform.localPosition.x > -7f)
+        {
+            camera.transform.localPosition += new Vector3(-2.5f * Time.deltaTime, 0f, 0f);
+            yield return null;
+        }
+    }
+
+    private IEnumerator AutoMovePlayer()
+    {
+        m_horizontalMove = -80f;
+        while (transform.localPosition.x > -14f)
+        {
+            yield return null;
+        }
+
+        m_jump = true;
     }
 
     private IEnumerator TryPickingUpCannonBall(bool isBigCannonBall)
@@ -148,6 +215,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (m_isControlledByTutorial)
+        {
+            return;
+        }
+
         m_horizontalMove = Input.GetAxisRaw("Horizontal") * m_gameConfig.PlayerMoveSpeed;
 
         if (Input.GetButtonDown("Jump"))

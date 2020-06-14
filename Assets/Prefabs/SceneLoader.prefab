@@ -59,5 +59,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3520a1aa525cec243b800c2207d3f4a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_boundaryRight: {fileID: 0}
+  m_boundaryLeft: {fileID: 0}
+  m_stuffToFadeOutAfterText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_sceneToLoad: SampleScene
   m_fader: {fileID: 5059453309949601842}
+  m_pressContinueFader: {fileID: 0}
