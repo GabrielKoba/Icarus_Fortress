@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemies:
-  - {fileID: 574790959137758069, guid: e92b5ea7eecf996408c258a97f39c98a, type: 3}
   - {fileID: 574790959137758069, guid: 6042de1c450381f4aa14bdc01ca8dfa9, type: 3}
+  - {fileID: 574790959137758069, guid: e92b5ea7eecf996408c258a97f39c98a, type: 3}
   - {fileID: 574790959137758069, guid: 3f9d1783aaecbbe4991a387f823cc161, type: 3}
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   ShouldSpawnEnemies: 1
