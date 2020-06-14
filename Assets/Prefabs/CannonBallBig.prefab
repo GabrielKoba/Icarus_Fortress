@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3745918173260229656}
   - component: {fileID: 5260100633964523658}
   - component: {fileID: 8683599725650789668}
+  - component: {fileID: 8533464951392052570}
   m_Layer: 0
   m_Name: CannonBallBig
   m_TagString: Untagged
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
+--- !u!114 &8533464951392052570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6988173492280286688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4373f9745a5bc4546adb0ab36b57ba07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTimer: 10
