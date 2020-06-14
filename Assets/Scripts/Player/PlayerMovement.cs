@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator LoadSceneAfterDelay()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5f);
         StartCoroutine(GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, "SampleScene"));
     }
 
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         var time = 0f;
         var ship = GameObject.FindGameObjectWithTag("AirShip");
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         while (time < 10f)
         {
             time += Time.deltaTime;
@@ -138,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
 
         var camera = GameObject.FindGameObjectWithTag("FakeCamera");
 
-        while (camera.transform.localPosition.x > -7f)
+        while (camera.transform.localPosition.x > -11.2f)
         {
             camera.transform.localPosition += new Vector3(-2.5f * Time.deltaTime, 0f, 0f);
             yield return null;
@@ -148,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator AutoMovePlayer()
     {
         m_horizontalMove = -80f;
-        while (transform.localPosition.x > -14f)
+        while (transform.localPosition.x > -12.5f)
         {
             yield return null;
         }
