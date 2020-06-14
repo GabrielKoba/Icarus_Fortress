@@ -16,9 +16,14 @@ public class GameConfig : ScriptableObject
     public float PlayerPickingUpCannonBallCoolDown = 0.9f;
 
     [Header("Enemy Spawner")]
-    public float MinDelay = 2f;
-    public float MaxDelay = 5f;
-    public float TimeBetweenDifficultyIncrease = 10f;
+    public float MinDelay = 7f;
+    public float MaxDelay = 13f;
+    public float TimeBetweenDifficultyIncrease = 5f;
+    public float TimeDeltaDecreaseDelays = 0.5f;
+    public int WeightBasicEnemy = 5;
+    public int WeightMediumEnemy = 2;
+    public int WeightHardEnemy = 0;
+
 
     [Header("Enemies")]
     public float SkyFlyMoveSpeed = 5f;
