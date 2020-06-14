@@ -386,7 +386,7 @@ MonoBehaviour:
   m_canSkipDelay: 1
   m_text: {fileID: 316574953}
   m_delayBeforeStart: 0
-  m_delay: 0.1
+  m_delay: 0.075
   m_allowSkip: 1
   m_onTextComplete:
     m_PersistentCalls:
@@ -444,7 +444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Now, get to know your artillary! Pick up some cannon balls, and fire the
+  m_Text: Now, get to know your artillery! Pick up some cannon balls, and fire the
     cannon three times!
 --- !u!222 &316574954
 CanvasRenderer:
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_canSkipDelay: 3
   m_text: {fileID: 754907240}
   m_delayBeforeStart: 0
-  m_delay: 0.125
+  m_delay: 0.075
   m_allowSkip: 1
   m_onTextComplete:
     m_PersistentCalls:
@@ -2157,7 +2157,7 @@ MonoBehaviour:
   m_canSkipDelay: 1
   m_text: {fileID: 1425456463}
   m_delayBeforeStart: 0
-  m_delay: 0.1
+  m_delay: 0.075
   m_allowSkip: 1
   m_onTextComplete:
     m_PersistentCalls:

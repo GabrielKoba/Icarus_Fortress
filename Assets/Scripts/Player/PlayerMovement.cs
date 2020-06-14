@@ -157,6 +157,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
+        FMODUnity.RuntimeManager.PlayOneShot(jumpSFX, transform.position);
         m_jump = true;
     }
 
