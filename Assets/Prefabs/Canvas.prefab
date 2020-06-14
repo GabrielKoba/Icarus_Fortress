@@ -271,7 +271,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  ropeSnapSFX: 
+  ropeSnapSFX: event:/Rope_Snap
 --- !u!114 &5622925511054058373
 MonoBehaviour:
   m_ObjectHideFlags: 0

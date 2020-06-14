@@ -68,3 +68,8 @@ MonoBehaviour:
   m_sceneToLoad: SampleScene
   m_fader: {fileID: 5059453309949601842}
   m_pressContinueFader: {fileID: 0}
+  m_greatText: {fileID: 0}
+  m_text: {fileID: 0}
+  m_tutText: {fileID: 0}
+  m_pickupText: {fileID: 0}
+  m_fireText: {fileID: 0}
