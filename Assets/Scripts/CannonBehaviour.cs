@@ -13,6 +13,7 @@ public class CannonBehaviour : MonoBehaviour
     [SerializeField] private Sprite m_capacityFull;
     [SerializeField] private Sprite m_capacityEmpty;
     [SerializeField] private Sprite m_capacityBig;
+    [SerializeField] private GameConfig m_config;
 
     private int m_cannonInventory = 0;
 
@@ -24,6 +25,8 @@ public class CannonBehaviour : MonoBehaviour
     [SerializeField] GameObject smokeEffectPrefab;
     private Animator m_Animator;
     private Animator m_smokeAnimator;
+
+    public static bool s_cannonsFillInstantly = true;
 
     public bool IsFullyLoaded => m_cannonInventory == CANNON_MAX_CAPACITY;
 
@@ -43,10 +46,22 @@ public class CannonBehaviour : MonoBehaviour
             return;
         }
 
+
+        bool loadBigSprite = parameters[1] == "Cannon_Capacity_3";
+        // Fill up all slots with the big one
+        if (loadBigSprite && s_cannonsFillInstantly)
+        {
+            m_cannonInventory = 0;
+            for (int i = 0; i < CANNON_MAX_CAPACITY; ++i)
+            {
+                m_capacityIndicators[m_cannonInventory].sprite = loadBigSprite ? m_capacityBig : m_capacityFull;
+                m_cannonInventory++;
+            }
+            return;
+        }
+
         if (m_cannonInventory < CANNON_MAX_CAPACITY)
         {
-            bool loadBigSprite = parameters[1] == "Cannon_Capacity_3";
-
             m_capacityIndicators[m_cannonInventory].sprite = loadBigSprite ? m_capacityBig : m_capacityFull;
             m_cannonInventory++;
         }
@@ -65,13 +80,19 @@ public class CannonBehaviour : MonoBehaviour
         var prefab = isBigBall ? m_cannonBallBigPrefab : m_cannonBallPrefab;
         Instantiate(prefab, m_cannonBallSpawnPosition.transform);
 
-        if (isBigBall)
+        if (isBigBall && s_cannonsFillInstantly)
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>().shakeDuration = 0.15f;
-
+            m_cannonInventory = 0;
+            foreach (var indicator in m_capacityIndicators)
+            {
+                indicator.sprite = m_capacityEmpty;
+            }
         }
-
-        m_capacityIndicators[m_cannonInventory].sprite = m_capacityEmpty;
+        else
+        {
+            m_capacityIndicators[m_cannonInventory].sprite = m_capacityEmpty;
+        }
 
         //Sound
         FMODUnity.RuntimeManager.PlayOneShot(fireSFX, transform.position);
@@ -81,5 +102,23 @@ public class CannonBehaviour : MonoBehaviour
         m_smokeAnimator.SetTrigger("Fire");
 
         Debug.Log($"{this.tag} fired!");
+    }
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            s_cannonsFillInstantly = !s_cannonsFillInstantly;
+
+            if (s_cannonsFillInstantly)
+            {
+                PlayerMovement.PickingUpCooldownBig = m_config.PlayerPickingUpBiggestCannonBallCoolDown;
+            }
+            else
+            {
+                PlayerMovement.PickingUpCooldownBig = 3f;
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@ MonoBehaviour:
   PlayerGravity: 5
   PlayerStartingLives: 4
   PlayerPickingUpCannonBallCoolDown: 0.3
-  PlayerPickingUpBiggestCannonBallCoolDown: 3
+  PlayerPickingUpBiggestCannonBallCoolDown: 1.2
   MinDelay: 5
   MaxDelay: 13
   TimeBetweenDifficultyIncrease: 9

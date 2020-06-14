@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
     private int m_numHeldCannonBalls = 0;
     private const int PLAYER_MAX_CANNONBALLS = 3;
 
+    public static float PickingUpCooldownBig;
+
     private readonly HashSet<string> m_cannonTags = new HashSet<string>()
     {
         "CannonTop",
@@ -81,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        PickingUpCooldownBig = m_gameConfig.PlayerPickingUpBiggestCannonBallCoolDown;
+
         m_controller.m_JumpForce = m_gameConfig.PlayerJumpForce;
         m_rigidBody.gravityScale = m_gameConfig.PlayerGravity;
     }
@@ -89,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
     {
         var time = 0f;
 
-        var cooldown = isBigCannonBall ? m_gameConfig.PlayerPickingUpBiggestCannonBallCoolDown : m_gameConfig.PlayerPickingUpCannonBallCoolDown;
+        var cooldown = isBigCannonBall ? PickingUpCooldownBig : m_gameConfig.PlayerPickingUpCannonBallCoolDown;
 
         while (time < cooldown)
         {
@@ -112,6 +116,16 @@ public class PlayerMovement : MonoBehaviour
         m_loadingBar.transform.localScale = new Vector3(m_loadingBar.transform.localScale.x, 0f, m_loadingBar.transform.localScale.z);
 
         FMODUnity.RuntimeManager.PlayOneShot(ballPickupSFX, transform.position);
+
+
+        if (CannonBehaviour.s_cannonsFillInstantly && isBigCannonBall)
+        {
+            m_numHeldCannonBalls = 2;
+            foreach (var capacityIndicator in m_capacityIndicators)
+            {
+                capacityIndicator.sprite = m_capacityFullBiggest;
+            }
+        }
 
         if (m_numHeldCannonBalls < PLAYER_MAX_CANNONBALLS)
         {
@@ -169,9 +183,19 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (m_capacityIndicators[m_numHeldCannonBalls - 1].sprite.name == "Cannon_Capacity_3")
+                if (m_capacityIndicators[m_numHeldCannonBalls - 1].sprite.name == "Cannon_Capacity_3" && !CannonBehaviour.s_cannonsFillInstantly)
                 {
                     m_heldCannonBall.GetComponent<SpriteRenderer>().sprite = m_bigCannonBallSprite;
+                }
+                else if (m_capacityIndicators[m_numHeldCannonBalls - 1].sprite.name == "Cannon_Capacity_3")
+                {
+                    foreach (var indicator in m_capacityIndicators)
+                    {
+                        indicator.sprite = m_capacityEmpty;
+                    }
+
+                    m_heldCannonBall.SetActive(false);
+                    m_numHeldCannonBalls = 0;
                 }
                 else
                 {

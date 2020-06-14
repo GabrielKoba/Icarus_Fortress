@@ -437,6 +437,7 @@ MonoBehaviour:
     type: 3}
   m_capacityBig: {fileID: 7939019810807140365, guid: 23f1fb6233b9f5048b34010b558c495b,
     type: 3}
+  m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   fireSFX: event:/Cannon_Fire
   smokeEffectPrefab: {fileID: 3501121660225812453}
 --- !u!114 &5433381182238161550
