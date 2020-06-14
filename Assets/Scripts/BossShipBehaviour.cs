@@ -66,6 +66,6 @@ public class BossShipBehaviour : MonoBehaviour
     private IEnumerator LoadSceneAgainAfterDelay()
     {
         yield return new WaitForSeconds(3f);
-        StartCoroutine(GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, "SampleScene"));
+        StartCoroutine(GameObject.FindGameObjectWithTag("SceneLoader").GetComponent<SceneFader>().FadeAndLoadScene(SceneFader.FadeDirection.In, "EndScene"));
     }
 }
