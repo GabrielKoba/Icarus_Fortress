@@ -34,4 +34,4 @@ MonoBehaviour:
   CloudBeetleSwitchLanesFrequencyMax: 4
   CloudBeetleSwitchLanesSpeed: 4
   WindWaspMoveSpeed: 2
-  TimeBeforeBossSpawn: 5
+  TimeBeforeBossSpawn: 60
