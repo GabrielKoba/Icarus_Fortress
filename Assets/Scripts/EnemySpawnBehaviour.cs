@@ -10,6 +10,9 @@ public class EnemySpawnBehaviour : MonoBehaviour
     [SerializeField] private GameConfig m_config;
     [SerializeField] private GameObject m_bossShipTransform;
 
+    [SerializeField] private Animator m_bossCannonAnimator;
+    [SerializeField] private Animator m_bossSmokeAnimator;
+
     public bool ShouldSpawnEnemies = true;
 
     private float m_currentMinDelay;
@@ -56,7 +59,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
         Debug.Log("Spawning boss!");
         while (m_bossShipTransform.transform.position.x > BOSS_SHIP_FINAL_POS_X)
         {
-            m_bossShipTransform.transform.position -= new Vector3(0.15f * Time.deltaTime, 0f, 0f);
+            m_bossShipTransform.transform.position -= new Vector3(0.2f * Time.deltaTime, 0f, 0f);
             yield return null;
         }
 
@@ -98,6 +101,9 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
             var index = GetRandomWeightedIndex();
             Instantiate(m_enemies[index], transform);
+
+            m_bossCannonAnimator.SetTrigger("Fire");
+            m_bossSmokeAnimator.SetTrigger("Fire");
         }
     }
 }

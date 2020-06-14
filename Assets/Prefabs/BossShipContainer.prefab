@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75b2149af0c50345b6abbdc4e1efdf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_hasSpawned: 0
   airShipRopes:
   - {fileID: 2091920110125476097}
   - {fileID: 2091920111060162816}
@@ -203,6 +204,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -1.78
       objectReference: {fileID: 0}
+    - target: {fileID: 1227116867697955931, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossCannonAnimator
+      value: 
+      objectReference: {fileID: 6714819525262350591}
+    - target: {fileID: 1227116867697955931, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossSmokeAnimator
+      value: 
+      objectReference: {fileID: 2637891363217776273}
     - target: {fileID: 1467127954838012242, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_TagString
@@ -228,10 +239,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 13.62
       objectReference: {fileID: 0}
+    - target: {fileID: 2256415143122389973, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2317266440120372010, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_TagString
       value: BossShipCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518675256357407545, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2715815707435572320, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
@@ -247,6 +268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663053543075247758, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4176443861302208284, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
@@ -278,6 +304,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7154011572008859192, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossCannonAnimator
+      value: 
+      objectReference: {fileID: 2288137847310762602}
+    - target: {fileID: 7154011572008859192, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossSmokeAnimator
+      value: 
+      objectReference: {fileID: 7382914642087101444}
     - target: {fileID: 7267442877263944240, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_Sprite
@@ -374,6 +410,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8290044268522095575, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossShipTransform
+      value: 
+      objectReference: {fileID: 4789932766316660178}
+    - target: {fileID: 8290044268522095575, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossCannonAnimator
+      value: 
+      objectReference: {fileID: 3327548637166182232}
+    - target: {fileID: 8290044268522095575, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossSmokeAnimator
+      value: 
+      objectReference: {fileID: 6312264528433518902}
     - target: {fileID: 8870816277989178761, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_Enabled
@@ -414,6 +465,42 @@ GameObject:
 --- !u!1 &2091920110125476097 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1052833787, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091920109349543674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2288137847310762602 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 200101763063438480, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091920109349543674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7382914642087101444 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8895347593109265150, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091920109349543674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3327548637166182232 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3686809390635450786, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091920109349543674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6312264528433518902 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5376828895692752844, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091920109349543674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6714819525262350591 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4622991788051269125, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091920109349543674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2637891363217776273 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4151283625249996907, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
     type: 3}
   m_PrefabInstance: {fileID: 2091920109349543674}
   m_PrefabAsset: {fileID: 0}

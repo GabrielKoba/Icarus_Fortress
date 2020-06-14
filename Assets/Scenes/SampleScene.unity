@@ -332,12 +332,6 @@ MonoBehaviour:
   shakeDuration: 0
   shakeAmount: 0.2
   decreaseFactor: 1
---- !u!1 &738353024 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4789932766316660178, guid: 119a3ee1b74a67e47a26c209506409e4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2091920109886374939}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &762974327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -729,21 +723,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 168774895677330735, guid: 119a3ee1b74a67e47a26c209506409e4,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445879936814606452, guid: 119a3ee1b74a67e47a26c209506409e4,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4608272638802482627, guid: 119a3ee1b74a67e47a26c209506409e4,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4789932766316660178, guid: 119a3ee1b74a67e47a26c209506409e4,
         type: 3}
       propertyPath: m_Name
@@ -804,11 +783,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7929670263833320749, guid: 119a3ee1b74a67e47a26c209506409e4,
-        type: 3}
-      propertyPath: m_bossShipTransform
-      value: 
-      objectReference: {fileID: 738353024}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 119a3ee1b74a67e47a26c209506409e4, type: 3}
 --- !u!1001 &5622925510441717013
