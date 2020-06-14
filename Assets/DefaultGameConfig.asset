@@ -18,13 +18,13 @@ MonoBehaviour:
   PlayerJumpForce: 800
   PlayerGravity: 5
   PlayerStartingLives: 4
-  PlayerPickingUpCannonBallCoolDown: 0.9
+  PlayerPickingUpCannonBallCoolDown: 0.3
   MinDelay: 1
   MaxDelay: 7
   TimeBetweenDifficultyIncrease: 10
-  SkyFlyMoveSpeed: 1.7
-  CloudBeetleMoveSpeed: 1.3
+  SkyFlyMoveSpeed: 1.5
+  CloudBeetleMoveSpeed: 1
   CloudBeetleSwitchLanesFrequencyMin: 2
   CloudBeetleSwitchLanesFrequencyMax: 4
   CloudBeetleSwitchLanesSpeed: 4
-  WindWaspMoveSpeed: 2.6
+  WindWaspMoveSpeed: 2
