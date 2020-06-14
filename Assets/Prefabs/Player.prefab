@@ -635,6 +635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingBar
       objectReference: {fileID: 0}
+    - target: {fileID: 1800518246555526654, guid: 7459448f6e309ef48b5dccea9c79fc7b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3112232368721783174, guid: 7459448f6e309ef48b5dccea9c79fc7b,
         type: 3}
       propertyPath: m_LocalPosition.x
