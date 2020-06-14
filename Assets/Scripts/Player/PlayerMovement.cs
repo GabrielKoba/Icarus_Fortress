@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
         while (time < 10f)
         {
             time += Time.deltaTime;
-            ship.transform.localPosition += new Vector3(0f, 2.5f* Time.deltaTime, 0f);
+            ship.transform.localPosition += new Vector3(0f, 3f* Time.deltaTime, 0f);
 
             yield return null;
         }
