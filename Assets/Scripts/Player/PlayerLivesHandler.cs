@@ -34,7 +34,7 @@ public class PlayerLivesHandler : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(ropeSnapSFX, transform.position);
         //
 
-        airShipRopes[nextRope].SetActive(false);
+        airShipRopes[nextRope].GetComponent<Animator>().SetTrigger("Snapped");
         nextRope++;
 
         m_currentLives--;
