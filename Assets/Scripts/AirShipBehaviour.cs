@@ -30,6 +30,7 @@ public class AirShipBehaviour : MonoBehaviour
         while (true)
         {
             this.transform.position += new Vector3(0f, 5f * Time.deltaTime, 0f);
+            yield return null;
         }
     }
 }
