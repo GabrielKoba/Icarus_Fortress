@@ -26,6 +26,7 @@ public class GameConfig : ScriptableObject
     public int WeightMediumEnemy = 2;
     public int WeightHardEnemy = 0;
 
+
     [Header("Enemies")]
     public float SkyFlyMoveSpeed = 5f;
     public float CloudBeetleMoveSpeed = 4f;
@@ -34,5 +35,6 @@ public class GameConfig : ScriptableObject
     public float CloudBeetleSwitchLanesSpeed = 2f;
     public float WindWaspMoveSpeed = 8f;
     public float TimeBeforeBossSpawn = 15f;
+    public int NumNormalHitsBeforeBossTakesLife = 3;
 }
 

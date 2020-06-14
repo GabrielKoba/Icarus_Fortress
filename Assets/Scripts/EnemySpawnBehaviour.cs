@@ -82,8 +82,8 @@ public class EnemySpawnBehaviour : MonoBehaviour
     private void SetBossDifficulty()
     {
         StopCoroutine(m_enemyCoroutine);
-        m_currentMinDelay = 2f;
-        m_currentMaxDelay = 4f;
+        m_currentMinDelay = 2.5f;
+        m_currentMaxDelay = 4.5f;
         m_weights[0] = 0;
         m_weights[1] = 0;
         m_weights[2] = 0;

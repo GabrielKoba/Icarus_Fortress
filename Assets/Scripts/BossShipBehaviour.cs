@@ -8,11 +8,14 @@ public class BossShipBehaviour : MonoBehaviour
     public bool m_hasSpawned = false;
     private int m_lives = 4;
     [SerializeField] List<GameObject> airShipRopes;
+    [SerializeField] private GameConfig m_config;
 
     [Header("Audio Settings")]
     [FMODUnity.EventRef][SerializeField]string ropeSnapSFX;
     [FMODUnity.EventRef][SerializeField]string AirshipHitSFX;
 
+
+    private int m_numIntermedieteHits = 0;
 
     public void OnBossHit(string thingThatHit)
     {
@@ -21,30 +24,25 @@ public class BossShipBehaviour : MonoBehaviour
             return;
         }
 
-        if (thingThatHit == "BigCannonBall")
+        GetComponent<CameraShake>().shakeDuration = 0.2f;
+        FMODUnity.RuntimeManager.PlayOneShot(AirshipHitSFX, transform.position);
+
+        if (thingThatHit == "BigCannonBall" || m_numIntermedieteHits == m_config.NumNormalHitsBeforeBossTakesLife)
         {
-            airShipRopes[m_lives - 1].GetComponent<Animator>().SetTrigger("Snapped");
+            m_numIntermedieteHits = 0;
 
-            var lives = m_lives -= 2;
+            m_lives--;
 
-            if (lives >= 0)
-            {
-                //Sound
-                FMODUnity.RuntimeManager.PlayOneShot(ropeSnapSFX, transform.position);
-                FMODUnity.RuntimeManager.PlayOneShot(AirshipHitSFX, transform.position);
+            //Sound
+            FMODUnity.RuntimeManager.PlayOneShot(ropeSnapSFX, transform.position);
 
-                airShipRopes[lives].GetComponent<Animator>().SetTrigger("Snapped");
-            }
 
-            m_lives = Math.Max(lives, 0);
+            airShipRopes[m_lives].GetComponent<Animator>().SetTrigger("Snapped");
         }
         else
         {
-            m_lives--;
-            airShipRopes[m_lives].GetComponent<Animator>().SetTrigger("Snapped");
+            m_numIntermedieteHits++;
         }
-
-        GetComponent<CameraShake>().shakeDuration = 0.2f;
 
         if (m_lives == 0)
         {
