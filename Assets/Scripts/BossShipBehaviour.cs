@@ -9,6 +9,11 @@ public class BossShipBehaviour : MonoBehaviour
     private int m_lives = 4;
     [SerializeField] List<GameObject> airShipRopes;
 
+    [Header("Audio Settings")]
+    [FMODUnity.EventRef][SerializeField]string ropeSnapSFX;
+    [FMODUnity.EventRef][SerializeField]string AirshipHitSFX;
+
+
     public void OnBossHit(string thingThatHit)
     {
         if (m_lives == 0 || !m_hasSpawned)
@@ -24,6 +29,10 @@ public class BossShipBehaviour : MonoBehaviour
 
             if (lives >= 0)
             {
+                //Sound
+                FMODUnity.RuntimeManager.PlayOneShot(ropeSnapSFX, transform.position);
+                FMODUnity.RuntimeManager.PlayOneShot(AirshipHitSFX, transform.position);
+
                 airShipRopes[lives].GetComponent<Animator>().SetTrigger("Snapped");
             }
 

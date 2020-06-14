@@ -28,6 +28,11 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
     private float m_bossTimeAccumulator = 0f;
 
+    [Header("Audio Settings")]
+    [SerializeField]GameObject audioSource;    
+    [FMODUnity.EventRef][SerializeField]string bossCannonSFX;
+    [FMODUnity.EventRef][SerializeField]string bossCannonDistantSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -133,6 +138,13 @@ public class EnemySpawnBehaviour : MonoBehaviour
 
             m_bossCannonAnimator.SetTrigger("Fire");
             m_bossSmokeAnimator.SetTrigger("Fire");
+
+            if (m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned) {
+                FMODUnity.RuntimeManager.PlayOneShot(bossCannonSFX, audioSource.transform.position);
+            }
+            else {
+                FMODUnity.RuntimeManager.PlayOneShot(bossCannonDistantSFX, audioSource.transform.position);
+            }
         }
     }
 }
