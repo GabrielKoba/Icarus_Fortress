@@ -91,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (m_isControlledByTutorial && other.gameObject.name == "Platform1")
         {
-            m_horizontalMove = 0f;
             StartCoroutine(AnimateShipUp());
             StartCoroutine(LoadSceneAfterDelay());
         }
@@ -111,6 +110,11 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(2f);
         while (time < 10f)
         {
+            if (time > 1.5f)
+            {
+                m_horizontalMove = 0f;
+            }
+
             time += Time.deltaTime;
             ship.transform.localPosition += new Vector3(0f, 3f* Time.deltaTime, 0f);
 
@@ -140,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
 
         while (camera.transform.localPosition.x > -11.2f)
         {
-            camera.transform.localPosition += new Vector3(-2.5f * Time.deltaTime, 0f, 0f);
+            camera.transform.localPosition += new Vector3(-3.5f * Time.deltaTime, 0f, 0f);
             yield return null;
         }
     }
