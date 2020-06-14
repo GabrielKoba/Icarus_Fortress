@@ -1404,7 +1404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &699446610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,7 +1540,7 @@ MonoBehaviour:
 
 
     Too bad the airship crashed, we worked on
-    it for so long.. Wonder what happened to Nimbus.. Hope is is ok!'
+    it for so long.. Wonder what happened to Nimbus.. Hope he''s ok!'
 --- !u!222 &754907241
 CanvasRenderer:
   m_ObjectHideFlags: 0
