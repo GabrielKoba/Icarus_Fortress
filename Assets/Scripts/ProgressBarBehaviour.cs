@@ -31,9 +31,6 @@ public class ProgressBarBehaviour : MonoBehaviour
             var factor = m_time / m_config.TimeBeforeBossSpawn;
             var currentDistance = distance * factor;
 
-            Debug.Log("Factor " + factor);
-            Debug.Log("Distance " + currentDistance);
-
             m_startPos.transform.localPosition = new Vector3(m_startVector.x + currentDistance, m_startPos.transform.localPosition.y, m_startPos.transform.localPosition.z);
             yield return null;
         }

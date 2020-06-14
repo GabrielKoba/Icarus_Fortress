@@ -8,7 +8,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000255A11299A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000255A112A638 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,10 +16,1031 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Fire Sweetener (3)', format=5, channels=2, frequency=48000, lengthbytes=11040, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.413069.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Fire Sweetener (4)', format=5, channels=2, frequency=48000, lengthbytes=11424, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.416281.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Fire Sweetener (1)', format=5, channels=2, frequency=48000, lengthbytes=12064, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.413616.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Fire (1)', format=5, channels=2, frequency=48000, lengthbytes=39904, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.391297.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Fire Sweetener (2)', format=5, channels=2, frequency=48000, lengthbytes=11488, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.410330.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Skyfly', format=5, channels=2, frequency=48000, lengthbytes=27648, lengthpcm=92769, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.084109.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Fire (2)', format=5, channels=2, frequency=48000, lengthbytes=39136, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.385586.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Recoil (1)', format=5, channels=2, frequency=48000, lengthbytes=43072, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.105339.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Recoil (2)', format=5, channels=2, frequency=48000, lengthbytes=43104, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.103719.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannonball Pickup (1)', format=5, channels=2, frequency=48000, lengthbytes=2848, lengthpcm=11077, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.153825.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Jump', format=5, channels=1, frequency=48000, lengthbytes=3456, lengthpcm=14881, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430508
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Loading (1)', format=5, channels=2, frequency=48000, lengthbytes=12768, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.204863.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (3)', format=5, channels=2, frequency=48000, lengthbytes=25408, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (1)', format=5, channels=2, frequency=48000, lengthbytes=20096, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.260941.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (4)', format=5, channels=2, frequency=48000, lengthbytes=25216, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (2)', format=5, channels=2, frequency=48000, lengthbytes=24896, lengthpcm=89307, pcmblocksize=0, loopstart=0, loopend=88614, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (2)', format=5, channels=2, frequency=48000, lengthbytes=18560, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.566162.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (3)', format=5, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.813766.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (4)', format=5, channels=2, frequency=48000, lengthbytes=21984, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (1)', format=5, channels=2, frequency=48000, lengthbytes=24480, lengthpcm=89537, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] SoundI::release                          :  (0000025803C5DBC8)
+[LOG] SoundI::release                          :     Jump (00000255A54EA3C8)
+[LOG] SoundI::release                          :  (0000025803C5DA58)
+[LOG] SoundI::release                          :     Cannonball Pickup (1) (00000255A54EA568)
+[LOG] SoundI::release                          :  (0000025803C5CED8)
+[LOG] SoundI::release                          :     Cannon Loading (1) (00000255A54EA708)
+[LOG] SoundI::release                          :  (00000257F7598E98)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (1) (00000255A54EAD88)
+[LOG] SoundI::release                          :  (00000257F7598A48)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (2) (00000255A767FBC8)
+[LOG] SoundI::release                          :  (00000257F7599458)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (3) (00000255A767F888)
+[LOG] SoundI::release                          :  (00000257F75988D8)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (4) (00000255A767F3A8)
+[LOG] SoundI::release                          :  (00000257F7598D28)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (1) (00000255A767F6E8)
+[LOG] SoundI::release                          :  (00000257F7599008)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (2) (00000255A767FA28)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cloudbeetle', format=5, channels=2, frequency=48000, lengthbytes=59936, lengthpcm=155077, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.321782.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannonball Pickup (1)', format=5, channels=2, frequency=48000, lengthbytes=2848, lengthpcm=11077, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.153825.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Loading (1)', format=5, channels=2, frequency=48000, lengthbytes=12768, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.204863.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (2)', format=5, channels=2, frequency=48000, lengthbytes=13536, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.401747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (1)', format=5, channels=2, frequency=48000, lengthbytes=20096, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.260941.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (4)', format=5, channels=2, frequency=48000, lengthbytes=13664, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.587345.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (1)', format=5, channels=2, frequency=48000, lengthbytes=15456, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.414464.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (2)', format=5, channels=2, frequency=48000, lengthbytes=24896, lengthpcm=89307, pcmblocksize=0, loopstart=0, loopend=88614, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (2)', format=5, channels=2, frequency=48000, lengthbytes=18560, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.566162.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (3)', format=5, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.813766.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (3)', format=5, channels=2, frequency=48000, lengthbytes=13152, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.385419.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (5)', format=5, channels=2, frequency=48000, lengthbytes=14656, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.449110.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Rope_Snapping (1)', format=5, channels=2, frequency=48000, lengthbytes=14880, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.317832.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (6)', format=5, channels=2, frequency=48000, lengthbytes=13696, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.520700.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (4)', format=5, channels=2, frequency=48000, lengthbytes=21984, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (1)', format=5, channels=2, frequency=48000, lengthbytes=24480, lengthpcm=89537, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000258054300E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Jump', format=5, channels=1, frequency=48000, lengthbytes=3456, lengthpcm=14881, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SoundI::release                          :  (00000257F75988D8)
+[LOG] SoundI::release                          :     Airship_Hit (1) (00000255A767F068)
+[LOG] SoundI::release                          :  (00000257F7598E98)
+[LOG] SoundI::release                          :     Airship_Hit (2) (00000255A54EA568)
+[LOG] SoundI::release                          :  (0000025803C5DBC8)
+[LOG] SoundI::release                          :     Airship_Hit (3) (00000255A767F3A8)
+[LOG] SoundI::release                          : Battle's Begun (00000257F75FAC98)
+[LOG] SoundI::release                          :     Battle's Begun (00000257F6465C08)
+[LOG] SoundI::release                          :     Battle's Begun (00000257F75FA938)
+[LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 123, compatVersion = 119 (oldest = 44, newest = 132)
+[LOG] SoundI::release                          :  (00000257F7599008)
+[LOG] SoundI::release                          :     Airship_Hit (4) (00000255A767F548)
+[LOG] SoundI::release                          :  (0000025803C5CED8)
+[LOG] SoundI::release                          :     Airship_Hit (5) (00000255A767F888)
+[LOG] SoundI::release                          :  (00000255A7BA99F8)
+[LOG] SoundI::release                          :     Airship_Hit (6) (0000025809D58378)
+[LOG] SoundI::release                          :  (00000255A7BA9B68)
+[LOG] SoundI::release                          :     Rope_Snapping (1) (00000255A767FD68)
+[LOG] SoundI::release                          :  (0000025803C5D328)
+[LOG] SoundI::release                          :     Skyfly (000002580AA17448)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430D48
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Skyfly', format=5, channels=2, frequency=48000, lengthbytes=27648, lengthpcm=92769, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.084109.
+[LOG] SystemI::createSound                     : filename = Assets/Plugins/FMOD/builds/Desktop/Music.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000255A583AB38 : node = 00000257F7B4DC70
+[LOG] SystemI::createSound                     : add node to async list : head = 0000025803762B48.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000255A583AB38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Plugins/FMOD/builds/Desktop/Music.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 535392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 1632
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000257F7B4DD80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Battle's Begun', format=5, channels=2, frequency=48000, lengthbytes=535008, lengthpcm=1675636, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.284361.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000255A583AB38
+[LOG] SoundI::release                          :  (00000257F7598A48)
+[LOG] SoundI::release                          :     Cloudbeetle (00000255A54EA708)
+[LOG] SoundI::release                          :  (00000257F7598D28)
+[LOG] SoundI::release                          :     Cannonball Pickup (1) (00000255A54EA3C8)
+[LOG] SoundI::release                          :  (00000255A7BA9FB8)
+[LOG] SoundI::release                          :     Jump (0000025809D58858)
+[LOG] SoundI::release                          :  (00000257F7599458)
+[LOG] SoundI::release                          :     Cannon Loading (1) (00000255A54EAD88)
+[LOG] SoundI::release                          :  (00000257F75995C8)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (1) (00000255A767FA28)
+[LOG] SoundI::release                          :  (00000257F75992E8)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (2) (00000255A767F208)
+[LOG] SoundI::release                          :  (0000025803C5DA58)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (3) (00000255A767F6E8)
+[LOG] SoundI::release                          :  (00000255A7BA9E48)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (4) (0000025809D581D8)
+[LOG] SoundI::release                          :  (00000255A7BA9CD8)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (1) (0000025809D58518)
+[LOG] SoundI::release                          :  (00000257F7599178)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (2) (00000255A767FBC8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (2)', format=5, channels=2, frequency=48000, lengthbytes=13536, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.401747.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (4)', format=5, channels=2, frequency=48000, lengthbytes=13664, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.587345.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (1)', format=5, channels=2, frequency=48000, lengthbytes=15456, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.414464.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (3)', format=5, channels=2, frequency=48000, lengthbytes=13152, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.385419.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (5)', format=5, channels=2, frequency=48000, lengthbytes=14656, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.449110.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Rope_Snapping (1)', format=5, channels=2, frequency=48000, lengthbytes=14880, lengthpcm=88614, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.317832.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Airship_Hit (6)', format=5, channels=2, frequency=48000, lengthbytes=13696, lengthpcm=44308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.520700.
+[LOG] SoundI::release                          :  (0000025803C5D048)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (3) (00000255A54EA8A8)
+[LOG] SoundI::release                          :  (00000257F7598BB8)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (4) (00000255A54EABE8)
+[LOG] SoundI::release                          :  (0000025803C5D608)
+[LOG] SoundI::release                          :     Cannon Recoil (1) (00000255A54EAA48)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cannon Recoil (1)', format=5, channels=2, frequency=48000, lengthbytes=43072, lengthpcm=177231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.105339.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (3)', format=5, channels=2, frequency=48000, lengthbytes=25408, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (1)', format=5, channels=2, frequency=48000, lengthbytes=20096, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.260941.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (4)', format=5, channels=2, frequency=48000, lengthbytes=25216, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (2)', format=5, channels=2, frequency=48000, lengthbytes=24896, lengthpcm=89307, pcmblocksize=0, loopstart=0, loopend=88614, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (2)', format=5, channels=2, frequency=48000, lengthbytes=18560, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.566162.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (3)', format=5, channels=2, frequency=48000, lengthbytes=21824, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.813766.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Bone Breaking (4)', format=5, channels=2, frequency=48000, lengthbytes=21984, lengthpcm=88845, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1643392
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33504
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000AA7DECF5A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD7EEA79E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD7EEA79B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD7EEA7AB0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD7EEA7B70
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000025805430928
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Enemy Meat Explosion (1)', format=5, channels=2, frequency=48000, lengthbytes=24480, lengthpcm=89537, pcmblocksize=0, loopstart=0, loopend=88613, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SoundI::release                          :  (00000255A7BAA298)
+[LOG] SoundI::release                          :     Airship_Hit (1) (0000025809D57CF8)
+[LOG] SoundI::release                          :  (00000255A7BAA408)
+[LOG] SoundI::release                          :     Airship_Hit (2) (0000025809D58858)
+[LOG] SoundI::release                          :  (00000255A7BA9E48)
+[LOG] SoundI::release                          :     Airship_Hit (3) (0000025809D58038)
+[LOG] SoundI::release                          :  (00000255A7BA9CD8)
+[LOG] SoundI::release                          :     Airship_Hit (4) (0000025809D581D8)
+[LOG] SoundI::release                          :  (00000255A7BA9FB8)
+[LOG] SoundI::release                          :     Airship_Hit (5) (0000025809D57E98)
+[LOG] SoundI::release                          :  (00000255A7BA9888)
+[LOG] SoundI::release                          :     Airship_Hit (6) (0000025809D58518)
+[LOG] SoundI::release                          :  (00000255A7BAA578)
+[LOG] SoundI::release                          :     Rope_Snapping (1) (0000025809D58378)
+[LOG] SoundI::release                          :  (0000025803C5DA58)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (1) (00000255A54EA568)
+[LOG] SoundI::release                          :  (0000025803C5D048)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (2) (00000255A54EAA48)
+[LOG] SoundI::release                          :  (00000255A7BA9B68)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (3) (00000255A54EA3C8)
+[LOG] SoundI::release                          :  (00000255A7BA99F8)
+[LOG] SoundI::release                          :     Enemy Bone Breaking (4) (00000255A54EABE8)
+[LOG] SoundI::release                          :  (00000257F75995C8)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (1) (000002580AA17448)
+[LOG] SoundI::release                          :  (0000025803860B78)
+[LOG] SoundI::release                          :     Wind Hownling Loop (000002570B2FFEC8)
+[LOG] SoundI::release                          :  (0000025803C5DBC8)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (2) (00000255A54EA8A8)
+[LOG] SoundI::release                          :  (0000025803C5D608)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (3) (00000255A54EA708)
+[LOG] SoundI::release                          :  (0000025803C5CED8)
+[LOG] SoundI::release                          :     Enemy Meat Explosion (4) (00000255A54EAD88)
+[LOG] SoundI::release                          :  (00000255A7BAA128)
+[LOG] SoundI::release                          :     Skyfly (0000025809D586B8)
+[LOG] SoundI::release                          :  (00000258038616F8)
+[LOG] SoundI::release                          :     Ship Creaking (1) (000002580AA17928)
+[LOG] SoundI::release                          :  (0000025803861418)
+[LOG] SoundI::release                          :     Ship Creaking (2) (000002580AA17108)
+[LOG] SoundI::release                          :  (00000258038612A8)
+[LOG] SoundI::release                          :     Ship Creaking (3) (000002580AA175E8)
+[LOG] SoundI::release                          :  (0000025803861138)
+[LOG] SoundI::release                          :     Ship Creaking (4) (000002570B2FFD28)
+[LOG] SoundI::release                          : Battle's Begun (00000255A583AB38)
+[LOG] SoundI::release                          :     Battle's Begun (00000257F6465728)
+[LOG] SoundI::release                          :     Battle's Begun (00000255A5839F68)
+[LOG] SoundI::release                          :  (0000025803C5D328)
+[LOG] SoundI::release                          :     Cannon Recoil (1) (0000025809D589F8)
+[LOG] SoundI::release                          :  (0000025803C5D778)
+[LOG] SoundI::release                          :     Cannon Recoil (2) (00000255A54EA228)
+[LOG] SoundI::release                          :  (0000025803C5D8E8)
+[LOG] SoundI::release                          :     Cannon Fire (1) (000002580AA16F68)
+[LOG] SoundI::release                          :  (0000025803C5D498)
+[LOG] SoundI::release                          :     Cannon Fire (2) (00000255A54EA088)
+[LOG] SoundI::release                          :  (0000025803860FC8)
+[LOG] SoundI::release                          :     Cannon Fire Sweetener (1) (000002580AA16DC8)
+[LOG] SoundI::release                          :  (0000025803C5D1B8)
+[LOG] SoundI::release                          :     Cannon Fire Sweetener (2) (000002580AA172A8)
+[LOG] SoundI::release                          :  (0000025803861588)
+[LOG] SoundI::release                          :     Cannon Fire Sweetener (3) (000002580AA17788)
+[LOG] SoundI::release                          :  (0000025803860CE8)
+[LOG] SoundI::release                          :     Cannon Fire Sweetener (4) (000002580AA17AC8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -27,3 +1048,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
