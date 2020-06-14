@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -315,6 +316,22 @@ MonoBehaviour:
   m_CropFrameX: 1
   m_CropFrameY: 1
   m_StretchFill: 1
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc81693edd14c6e49ab3594d52959619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 0
+  shakeAmount: 0.2
+  decreaseFactor: 1
 --- !u!1001 &762974327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -734,6 +751,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2155396231134996787, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2155396231134996787, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759833335903226770, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_TagString
+      value: BallPileRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235795003896286374, guid: f016a43d2fcb7f64faa369a44a9f0311,
+        type: 3}
+      propertyPath: m_TagString
+      value: BallPileRed
+      objectReference: {fileID: 0}
     - target: {fileID: 7267442877263944241, guid: f016a43d2fcb7f64faa369a44a9f0311,
         type: 3}
       propertyPath: m_Name
@@ -872,12 +909,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5680556071661250390, guid: 92b750086f4fea74d82716ed6964c4aa,
+    - target: {fileID: 3764330315111483778, guid: 92b750086f4fea74d82716ed6964c4aa,
         type: 3}
-      propertyPath: m_capacityFull
-      value: 
-      objectReference: {fileID: -3988628281003160770, guid: 23f1fb6233b9f5048b34010b558c495b,
-        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7928642810162907553, guid: 92b750086f4fea74d82716ed6964c4aa,
         type: 3}
       propertyPath: m_Name
