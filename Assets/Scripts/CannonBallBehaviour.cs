@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.IMGUI.Controls;
+﻿using System.Collections;
 using UnityEngine;
 
 public class CannonBallBehaviour : MonoBehaviour
 {
     [SerializeField] private GameConfig m_config;
+    [SerializeField] private GameEventStringParam m_bossShipHit;
 
     public void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.transform.tag == "BossShipCollider")
+        {
+            m_bossShipHit.Raise("SmallCannonBall");
+            Destroy(gameObject);
+        }
+
         if (other.collider.tag == "Enemy")
         {
             Destroy(gameObject);

@@ -7,6 +7,16 @@ using UnityEngine;
 public class CannonBallBigBehaviour : MonoBehaviour
 {
     [SerializeField] private GameConfig m_config;
+    [SerializeField] private GameEventStringParam m_bossShipHit;
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.transform.tag == "BossShipCollider")
+        {
+            m_bossShipHit.Raise("BigCannonBall");
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {

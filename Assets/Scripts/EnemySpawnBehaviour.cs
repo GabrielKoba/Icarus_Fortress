@@ -8,6 +8,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
 {
     [SerializeField] private List<GameObject> m_enemies;
     [SerializeField] private GameConfig m_config;
+    [SerializeField] private GameObject m_bossShipTransform;
 
     public bool ShouldSpawnEnemies = true;
 
@@ -15,6 +16,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
     private float m_currentMaxDelay;
 
     private readonly float[] m_weights = new float[3];
+    private const float BOSS_SHIP_FINAL_POS_X = 7.4f;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,26 @@ public class EnemySpawnBehaviour : MonoBehaviour
             {
                 Debug.Log($"<color=green>[Increasing difficulty] Min: {m_currentMinDelay} Max: {m_currentMaxDelay}, Weights {m_weights[0]}, {m_weights[1]}, {m_weights[2]}</color>", this);
             }
+        }
+    }
+
+    private IEnumerator AnimateAndActivateBossShip()
+    {
+        Debug.Log("Spawning boss!");
+        while (m_bossShipTransform.transform.position.x > BOSS_SHIP_FINAL_POS_X)
+        {
+            m_bossShipTransform.transform.position -= new Vector3(0.15f * Time.deltaTime, 0f, 0f);
+            yield return null;
+        }
+
+        m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned = true;
+    }
+
+    private void Update()
+    {
+        if (Time.time > m_config.TimeBeforeBossSpawn && m_bossShipTransform != null)
+        {
+            StartCoroutine(AnimateAndActivateBossShip());
         }
     }
 

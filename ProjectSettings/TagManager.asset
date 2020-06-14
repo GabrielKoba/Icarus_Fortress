@@ -17,6 +17,7 @@ TagManager:
   - BallPileRed
   - FakeCamera
   - SceneLoader
+  - BossShipCollider
   layers:
   - Default
   - TransparentFX

@@ -23,9 +23,9 @@ MonoBehaviour:
   PlayerPickingUpBiggestCannonBallCoolDown: 1.2
   MinDelay: 4
   MaxDelay: 25
-  TimeBetweenDifficultyIncrease: 9
+  TimeBetweenDifficultyIncrease: 7
   TimeDeltaDecreaseDelays: 0.4
-  WeightBasicEnemy: 40
+  WeightBasicEnemy: 45
   WeightMediumEnemy: 2
   WeightHardEnemy: 0
   SkyFlyMoveSpeed: 1.5
@@ -34,3 +34,4 @@ MonoBehaviour:
   CloudBeetleSwitchLanesFrequencyMax: 4
   CloudBeetleSwitchLanesSpeed: 4
   WindWaspMoveSpeed: 2
+  TimeBeforeBossSpawn: 10

@@ -32,7 +32,6 @@ public class PlayerLivesHandler : MonoBehaviour
 
         //Sound
         FMODUnity.RuntimeManager.PlayOneShot(ropeSnapSFX, transform.position);
-        //
 
         airShipRopes[nextRope].GetComponent<Animator>().SetTrigger("Snapped");
         nextRope++;

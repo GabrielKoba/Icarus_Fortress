@@ -15,6 +15,11 @@ public class AirShipBehaviour : MonoBehaviour
 
     public void OnBulletHit()
     {
+        if (m_lives == 0)
+        {
+            return;
+        }
+
         m_lives--;
         GetComponent<CameraShake>().shakeDuration = 0.2f;
 
@@ -27,9 +32,10 @@ public class AirShipBehaviour : MonoBehaviour
 
     private IEnumerator AnimateShipDeath()
     {
+        GetComponent<CameraShake>().enabled = false;
         while (true)
         {
-            this.transform.position += new Vector3(0f, 5f * Time.deltaTime, 0f);
+            this.transform.position -= new Vector3(0f, 5f * Time.deltaTime, 0f);
             yield return null;
         }
     }
