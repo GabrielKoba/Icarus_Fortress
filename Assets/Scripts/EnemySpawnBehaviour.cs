@@ -59,7 +59,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
         Debug.Log("Spawning boss!");
         while (m_bossShipTransform.transform.position.x > BOSS_SHIP_FINAL_POS_X)
         {
-            m_bossShipTransform.transform.position -= new Vector3(0.2f * Time.deltaTime, 0f, 0f);
+            m_bossShipTransform.transform.position -= new Vector3(0.1f * Time.deltaTime, 0f, 0f);
             yield return null;
         }
 
