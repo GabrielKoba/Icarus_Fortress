@@ -55,7 +55,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(m_config.TimeBetweenDifficultyIncrease);
-            m_currentMinDelay = Mathf.Max(0, m_currentMinDelay - m_config.TimeDeltaDecreaseDelays);
+            m_currentMinDelay = Mathf.Max(3, m_currentMinDelay - m_config.TimeDeltaDecreaseDelays);
             m_currentMaxDelay = Mathf.Max(9, m_currentMaxDelay - m_config.TimeDeltaDecreaseDelays);
 
             m_weights[1]++;
