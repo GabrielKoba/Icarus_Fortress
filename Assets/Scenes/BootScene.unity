@@ -1810,6 +1810,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191622673}
     m_Modifications:
+    - target: {fileID: 4301934090626520968, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1649542983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301934090626520968, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301934090626520968, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7950093485071643000, guid: 5de82936f56b7bb4db8197b086deb974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1879,6 +1894,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: CannonMiddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007231212134699324, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1649542983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007231212134699324, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007231212134699324, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969710062738127248, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1649542983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969710062738127248, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969710062738127248, guid: 5de82936f56b7bb4db8197b086deb974,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5de82936f56b7bb4db8197b086deb974, type: 3}
@@ -2578,7 +2623,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Betrayal
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
