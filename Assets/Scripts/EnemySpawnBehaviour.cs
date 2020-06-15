@@ -9,6 +9,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
     [SerializeField] private List<GameObject> m_enemies;
     [SerializeField] private GameConfig m_config;
     [SerializeField] private GameObject m_bossShipTransform;
+    [SerializeField] private GameObject m_bossShipLogicGameObject;
 
     [SerializeField] private Animator m_bossCannonAnimator;
     [SerializeField] private Animator m_bossSmokeAnimator;
@@ -139,7 +140,7 @@ public class EnemySpawnBehaviour : MonoBehaviour
             m_bossCannonAnimator.SetTrigger("Fire");
             m_bossSmokeAnimator.SetTrigger("Fire");
 
-            if (m_bossShipTransform.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned) {
+            if (m_bossShipLogicGameObject.GetComponentInChildren<BossShipBehaviour>().m_hasSpawned) {
                 FMODUnity.RuntimeManager.PlayOneShot(bossCannonSFX, audioSource.transform.position);
             }
             else {

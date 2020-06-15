@@ -130,6 +130,10 @@ public class SceneLoader : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Y)) {
+            LoadScene(m_sceneToLoad);
+        }
+
         // if (m_textIsComplete)
         // {
         //     m_pressContinueFader.FadeImage(1);

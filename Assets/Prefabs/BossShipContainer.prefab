@@ -293,6 +293,7 @@ MonoBehaviour:
   - {fileID: 2091920111060162816}
   - {fileID: 2091920110618435145}
   - {fileID: 2091920110679535102}
+  m_config: {fileID: 11400000, guid: fe8e3cbade6deab4db037b3f1fe929d8, type: 2}
   ropeSnapSFX: event:/Rope_Snap
   AirshipHitSFX: event:/Airship_Hit
 --- !u!114 &409145394
@@ -307,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc81693edd14c6e49ab3594d52959619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camTransform: {fileID: 0}
+  camTransform: {fileID: 8781133665553089737}
   shakeDuration: 0
   shakeAmount: 0.08
   decreaseFactor: 1
@@ -387,7 +388,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_bossShipTransform
       value: 
-      objectReference: {fileID: 8781133665553089739}
+      objectReference: {fileID: 4789932766316660178}
     - target: {fileID: 1227116867697955931, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: bossCannonSFX
@@ -398,6 +399,11 @@ PrefabInstance:
       propertyPath: bossCannonDistantSFX
       value: event:/Cannon_Fire_Distant
       objectReference: {fileID: 0}
+    - target: {fileID: 1227116867697955931, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossShipLogicGameObject
+      value: 
+      objectReference: {fileID: 8781133665553089739}
     - target: {fileID: 1467127954838012240, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,7 +578,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_bossShipTransform
       value: 
-      objectReference: {fileID: 8781133665553089739}
+      objectReference: {fileID: 4789932766316660178}
     - target: {fileID: 7154011572008859192, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: bossCannonSFX
@@ -583,6 +589,11 @@ PrefabInstance:
       propertyPath: bossCannonDistantSFX
       value: event:/Cannon_Fire_Distant
       objectReference: {fileID: 0}
+    - target: {fileID: 7154011572008859192, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossShipLogicGameObject
+      value: 
+      objectReference: {fileID: 8781133665553089739}
     - target: {fileID: 7267442877263944240, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_Sprite
@@ -713,7 +724,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_bossShipTransform
       value: 
-      objectReference: {fileID: 8781133665553089739}
+      objectReference: {fileID: 4789932766316660178}
     - target: {fileID: 8290044268522095575, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_bossCannonAnimator
@@ -734,6 +745,11 @@ PrefabInstance:
       propertyPath: bossCannonDistantSFX
       value: event:/Cannon_Fire_Distant
       objectReference: {fileID: 0}
+    - target: {fileID: 8290044268522095575, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
+        type: 3}
+      propertyPath: m_bossShipLogicGameObject
+      value: 
+      objectReference: {fileID: 8781133665553089739}
     - target: {fileID: 8870816277989178761, guid: 24e17af81d1e0d04ba5f1ded4e45f816,
         type: 3}
       propertyPath: m_Enabled
