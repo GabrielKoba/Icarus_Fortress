@@ -11,14 +11,14 @@ public class PlatformBehaviour : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKey(KeyCode.S) && !m_isDropping)
+        if (Input.GetKey(KeyCode.S) && !m_isDropping || Input.GetKey(KeyCode.DownArrow) && !m_isDropping)
         {
             m_isDropping = true;
             m_effector.rotationalOffset = 180f;
             StartCoroutine(RotateBackEffectorAfterDelay(0.15f));
         }
 
-        if (Input.GetKeyUp(KeyCode.S) && Mathf.Approximately(m_effector.rotationalOffset, 0f))
+        if (Input.GetKeyUp(KeyCode.S) && Mathf.Approximately(m_effector.rotationalOffset, 0f) || Input.GetKeyUp(KeyCode.DownArrow) && Mathf.Approximately(m_effector.rotationalOffset, 0f))
         {
             m_isDropping = false;
         }

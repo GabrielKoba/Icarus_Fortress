@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class ProgressBarBehaviour : MonoBehaviour
 {
+    [SerializeField] private PostProcessVolume endVolume;
+
     [SerializeField] private Transform m_startPos;
     [SerializeField] private Transform m_endPos;
     [SerializeField] private GameConfig m_config;
@@ -28,6 +31,8 @@ public class ProgressBarBehaviour : MonoBehaviour
 
             var factor = m_time / m_config.TimeBeforeBossSpawn;
             var currentDistance = distance * factor;
+
+            endVolume.weight = Mathf.Lerp(0, 1, factor);
 
             m_startPos.transform.localPosition = new Vector3(m_startVector.x + currentDistance, m_startPos.transform.localPosition.y, m_startPos.transform.localPosition.z);
             yield return null;

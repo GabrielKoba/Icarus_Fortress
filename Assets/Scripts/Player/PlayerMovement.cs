@@ -227,7 +227,7 @@ public class PlayerMovement : MonoBehaviour
 
         m_horizontalMove = Input.GetAxisRaw("Horizontal") * m_gameConfig.PlayerMoveSpeed;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Jump2"))
         {
             //Sound
             FMODUnity.RuntimeManager.PlayOneShot(jumpSFX, transform.position);
